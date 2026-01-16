@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Accueil Officiel - Ministère des Industries Minières et de la Géologie</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#14b84b",
+                        "secondary-yellow": "#fadb14",
+                        "accent-red": "#dc2626",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#0e1b12",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        body { font-family: "Public Sans", sans-serif; }
+        .hero-gradient {
+            background: linear-gradient(to right, rgba(14, 27, 18, 0.8), rgba(14, 27, 18, 0.2));
+        }
+        .flag-accent { height: 6px; background: linear-gradient(90deg, #14b84b 33%, #facc15 33% 66%, #ef4444 66%); }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#0e1b12] dark:text-white transition-colors duration-200">
+<div class="flag-accent w-full"></div>
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[#e7f3eb] dark:border-[#2a3f31] px-6 md:px-20 py-4 bg-white dark:bg-[#0e1b12] sticky top-0 z-50">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3 text-[#0e1b12] dark:text-white">
+<div class="size-8 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-sm md:text-lg font-bold leading-tight uppercase tracking-wide">Industries Minières</h2>
+</div>
+<nav class="hidden lg:flex items-center gap-6">
+<a class="text-sm font-bold text-primary border-b-2 border-primary pb-1" href="code.html">Accueil</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="ministere.html">Le Ministre</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="mission.html">Missions</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="actualite.html">Actualités</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="contacts.html">Contacts</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-primary/10 text-primary p-2 rounded-full lg:hidden">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<div class="hidden md:flex items-center bg-[#e7f3eb] dark:bg-[#1a2e21] rounded-lg px-3 py-1.5 border border-primary/10">
+<span class="material-symbols-outlined text-primary text-xl">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm w-32 lg:w-48" placeholder="Rechercher..." type="text"/>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 bg-primary text-white rounded-lg font-bold text-xs uppercase tracking-tighter shadow-sm">
+<span class="truncate">République du Congo</span>
+</div>
+</div>
+</header>
+<main class="max-w-[1200px] mx-auto px-4 py-8">
+<!-- Hero Section / Headline -->
+<div class="mb-8">
+<h1 class="text-[#0d1b12] dark:text-white text-[32px] md:text-[40px] font-extrabold leading-tight mb-2">Actualités du Secteur Minier</h1>
+<p class="text-[#4c9a66] dark:text-primary/70 text-lg">Suivez les activités et les décisions majeures du Ministère à Brazzaville et en régions.</p>
+</div>
+<!-- Featured Carousel (À la Une) -->
+<div class="relative w-full overflow-hidden rounded-xl bg-white dark:bg-white/5 shadow-xl mb-12">
+<div class="flex flex-col md:flex-row min-h-[450px]">
+<div class="md:w-3/5 relative bg-center bg-cover" data-alt="Le Ministre Pierre Oba signe une note de service officielle" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDoX2J0V8esdA_UbJTEGwntpqK0iThkZG1rn1S3gjqaCmPI4xufu3Vd9jwAWxobvyYKLp-Sh_lHO90oIRvBGkwg3hEA9VhSkienqW9fbC4gwk1sLkb_-ypzyd2J-5iDIIK1LtRuJ0EYif4fmmBNc5fh7dx3q4iV-H8oZTsRz3tJ65q0QQqnpofAnNpCJdIxvnHTd91A2fyrJlfVLtOVOq1H_ST_BBEzLvbpj-ufySA90SgfejkbF9m42sbdvGGoEoizI8-KWIMILQU");'>
+<div class="absolute top-4 left-4 bg-primary text-[#0d1b12] text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                        À la Une
+                    </div>
+</div>
+<div class="md:w-2/5 p-8 flex flex-col justify-center gap-6">
+<div class="space-y-2">
+<p class="text-[#4c9a66] font-semibold text-sm flex items-center gap-2 uppercase tracking-tighter">
+<span class="material-symbols-outlined text-sm">calendar_today</span>
+                            29 Avril 2025
+                        </p>
+<h2 class="text-2xl md:text-3xl font-bold text-[#0d1b12] dark:text-white leading-snug">Note de service : Lancement des inspections départementales</h2>
+<p class="text-[#4c9a66] dark:text-white/70 leading-relaxed">
+                            Le Ministre d'État Pierre Oba renforce le suivi rigoureux des activités minières. Cette nouvelle directive vise à assurer la conformité environnementale et sociale de toutes les exploitations actives sur le territoire national.
+                        </p>
+</div>
+<div class="flex gap-4">
+<button class="bg-primary hover:bg-primary/90 text-[#0d1b12] font-bold py-3 px-6 rounded-lg transition-all flex items-center gap-2">
+                            Lire le communiqué <span class="material-symbols-outlined">arrow_right_alt</span>
+</button>
+</div>
+<div class="flex gap-2 mt-4">
+<div class="h-1 w-12 bg-primary rounded-full"></div>
+<div class="h-1 w-12 bg-gray-200 dark:bg-white/10 rounded-full"></div>
+<div class="h-1 w-12 bg-gray-200 dark:bg-white/10 rounded-full"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Content Area with Sidebar -->
+<div class="flex flex-col lg:flex-row gap-8">
+<!-- Sidebar Navigation & Filters -->
+<aside class="lg:w-1/4 space-y-8">
+<div class="bg-white dark:bg-white/5 p-6 rounded-xl border border-[#e7f3eb] dark:border-white/10">
+<div class="flex flex-col mb-6">
+<h3 class="text-[#0d1b12] dark:text-white text-lg font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">filter_list</span>
+                            Filtrer par catégorie
+                        </h3>
+<div class="h-1 w-10 bg-primary mt-1 rounded-full"></div>
+</div>
+<div class="flex flex-col gap-3">
+<button class="flex items-center justify-between px-4 py-3 rounded-lg bg-primary text-[#0d1b12] font-semibold group">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined">all_inclusive</span>
+<span class="text-sm">Toutes les actus</span>
+</div>
+<span class="text-xs bg-[#0d1b12]/10 px-2 rounded-full">24</span>
+</button>
+<button class="flex items-center justify-between px-4 py-3 rounded-lg hover:bg-[#e7f3eb] dark:hover:bg-white/10 text-[#0d1b12] dark:text-white transition-all group">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#4c9a66]">description</span>
+<span class="text-sm font-medium">Communiqués</span>
+</div>
+<span class="text-xs text-[#4c9a66]">12</span>
+</button>
+<button class="flex items-center justify-between px-4 py-3 rounded-lg hover:bg-[#e7f3eb] dark:hover:bg-white/10 text-[#0d1b12] dark:text-white transition-all group">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#4c9a66]">event_note</span>
+<span class="text-sm font-medium">Événements</span>
+</div>
+<span class="text-xs text-[#4c9a66]">8</span>
+</button>
+<button class="flex items-center justify-between px-4 py-3 rounded-lg hover:bg-[#e7f3eb] dark:hover:bg-white/10 text-[#0d1b12] dark:text-white transition-all group">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#4c9a66]">newspaper</span>
+<span class="text-sm font-medium">Revue de Presse</span>
+</div>
+<span class="text-xs text-[#4c9a66]">4</span>
+</button>
+</div>
+</div>
+<!-- Featured Document -->
+<div class="bg-background-dark text-white p-6 rounded-xl relative overflow-hidden">
+<div class="relative z-10">
+<h4 class="font-bold text-lg mb-2">Code Minier 2025</h4>
+<p class="text-xs text-primary mb-4">Mise à jour réglementaire</p>
+<button class="w-full py-2 bg-white/10 hover:bg-white/20 rounded-lg text-sm flex items-center justify-center gap-2 border border-white/20 transition-all">
+<span class="material-symbols-outlined text-sm">download</span>
+                            Télécharger le PDF
+                        </button>
+</div>
+<div class="absolute -right-4 -bottom-4 opacity-10">
+<span class="material-symbols-outlined text-8xl">article</span>
+</div>
+</div>
+</aside>
+<!-- News Grid -->
+<div class="lg:w-3/4">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Card 1 -->
+<div class="flex flex-col bg-white dark:bg-white/5 rounded-xl border border-[#e7f3eb] dark:border-white/10 overflow-hidden hover:shadow-lg transition-all group">
+<div class="h-48 bg-center bg-cover relative" data-alt="Conférence internationale sur les mines à Brazzaville" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuApz4R3xs4VWveSGXTXjlZD5wY5ln73bL9ZQ7A37IBohAdu9U9cj8VGtsPmR0dXUuDYg7lwCHNJMN04IRh_hl1bnVGDK8kLiT-uR938lHsj7Si60euEqcmDB3J_-ZRVSzgaFMz5K6Xe9GEIH04fIdx0Ma0DYyLt3egLsPyBsztRm7og9JB91XXp41g5YonyKOKFw4uRrjb6uL_bWxlY5jAK-yqqxVnHBX4wObSVGi1UvhNrNoMEPs5d-PR6M_NQSDglufX5IRjB294");'>
+<div class="absolute top-3 left-3 bg-congoyellow text-background-dark text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Événement</div>
+</div>
+<div class="p-6 space-y-3">
+<div class="flex items-center gap-2 text-[12px] text-[#4c9a66] dark:text-primary/70 font-medium">
+<span class="material-symbols-outlined text-sm">calendar_month</span>
+                                15 Mai 2025
+                            </div>
+<h3 class="text-lg font-bold text-[#0d1b12] dark:text-white leading-snug group-hover:text-primary transition-colors">Conférence Internationale sur les Mines (CIM-2025)</h3>
+<p class="text-sm text-[#4c9a66] dark:text-white/60 line-clamp-2">Les experts se réunissent pour discuter de l'avenir minier et de la transition énergétique en Afrique Centrale.</p>
+<a class="inline-flex items-center text-primary font-bold text-sm mt-2 gap-1 group-hover:gap-2 transition-all" href="#">
+                                Lire la suite <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="flex flex-col bg-white dark:bg-white/5 rounded-xl border border-[#e7f3eb] dark:border-white/10 overflow-hidden hover:shadow-lg transition-all group">
+<div class="h-48 bg-center bg-cover relative" data-alt="Signature d'un accord stratégique entre le gouvernement et des partenaires" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAbBqKsfiz5C3ii2MVShCZj36M53-TpAr32Yt7cGhNVhV0nmvWErgUNLQawtSb_wt0sAAp-K4rYv-NXTac6gpsx_AOg39BEyzbY2lrJRGmcDRZ5PtFcF-g1qR7_e5Erkrb1sMPleShBP3R5qjkAaSBwvUWwUJFf5xbUD4nwqCOj0HOwwZpu0LExZ_w56zuByBeZgFxbvQqBnm9Ea2xHTM6rOTexbV9cgRsN2gpLigRA-y8E_jtfHSOeH8l-j6ppQuGa0N6iI9NGaG0");'>
+<div class="absolute top-3 left-3 bg-primary text-[#0d1b12] text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Communiqué</div>
+</div>
+<div class="p-6 space-y-3">
+<div class="flex items-center gap-2 text-[12px] text-[#4c9a66] dark:text-primary/70 font-medium">
+<span class="material-symbols-outlined text-sm">calendar_month</span>
+                                12 Mai 2025
+                            </div>
+<h3 class="text-lg font-bold text-[#0d1b12] dark:text-white leading-snug group-hover:text-primary transition-colors">Signature de partenariat stratégique pour le fer</h3>
+<p class="text-sm text-[#4c9a66] dark:text-white/60 line-clamp-2">Accord bilatéral pour le développement accéléré des ressources de fer dans la zone Nord du Congo.</p>
+<a class="inline-flex items-center text-primary font-bold text-sm mt-2 gap-1 group-hover:gap-2 transition-all" href="#">
+                                Lire la suite <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="flex flex-col bg-white dark:bg-white/5 rounded-xl border border-[#e7f3eb] dark:border-white/10 overflow-hidden hover:shadow-lg transition-all group">
+<div class="h-48 bg-center bg-cover relative" data-alt="Carte géologique détaillée du territoire congolais" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAF9fCqAEwqhu07tVXcIUuaR4Liupq838A_ESkCRuRcntV_PctaoibpBm_RL0RXI8diJ8ngC1BjKqh2BwWAlra4NI4jwnCPxHcRb1eGSy_wRnOoOxlrbvM9w_S6oab-Li4T7FcfbZZVqiZ_n2-CGpoWpwrUlObgwXf3nuyzekbcOOrN8lJDeNW0w9Wl6bGdwNL1QHslfDgFfGH4mjHJRVT7ydrURZTXdrya9yGYu1Lu6Xxvc6Sp2-ZFJIbnlg19qAz2nZGVzrKSaFY");'>
+<div class="absolute top-3 left-3 bg-congored text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Presse</div>
+</div>
+<div class="p-6 space-y-3">
+<div class="flex items-center gap-2 text-[12px] text-[#4c9a66] dark:text-primary/70 font-medium">
+<span class="material-symbols-outlined text-sm">calendar_month</span>
+                                10 Mai 2025
+                            </div>
+<h3 class="text-lg font-bold text-[#0d1b12] dark:text-white leading-snug group-hover:text-primary transition-colors">Rapport annuel de prospection géologique</h3>
+<p class="text-sm text-[#4c9a66] dark:text-white/60 line-clamp-2">Publication des résultats encourageants des dernières études de sol menées par la direction de la géologie.</p>
+<a class="inline-flex items-center text-primary font-bold text-sm mt-2 gap-1 group-hover:gap-2 transition-all" href="#">
+                                Lire la suite <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="flex flex-col bg-white dark:bg-white/5 rounded-xl border border-[#e7f3eb] dark:border-white/10 overflow-hidden hover:shadow-lg transition-all group">
+<div class="h-48 bg-center bg-cover relative" data-alt="Le ministre visite un site d'exploitation minière" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAhduOnEAbsHa4STKtY0FINF74FtnPwg5earGTfEeAuzFQHR_KazoJ1dcvkqVd_vdtRmK2-MfxXTvIoKDFELKJKLMMfwiD3rZ-wSvoWjbLYvI3cD3VelwDkSHjXUXm8OKNE5Et8bi8ojrDkq6ldf5ZJuHuJiIPKrBQmIn6E2MIjDFFsMlNEzx5RF6xW3NFNZf7vwpLJlFWPi1Mll953Tppn6EvdhjpqXM8McyhWbUX75lCSU3-SuQD-2KaGLDll2lC-8aTgwaH7xyA");'>
+<div class="absolute top-3 left-3 bg-congoyellow text-background-dark text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Événement</div>
+</div>
+<div class="p-6 space-y-3">
+<div class="flex items-center gap-2 text-[12px] text-[#4c9a66] dark:text-primary/70 font-medium">
+<span class="material-symbols-outlined text-sm">calendar_month</span>
+                                05 Mai 2025
+                            </div>
+<h3 class="text-lg font-bold text-[#0d1b12] dark:text-white leading-snug group-hover:text-primary transition-colors">Visite de terrain : Zone minière de Sangha</h3>
+<p class="text-sm text-[#4c9a66] dark:text-white/60 line-clamp-2">Le Ministre Pierre Oba a inspecté l'avancement des travaux d'infrastructure des sites d'extraction.</p>
+<a class="inline-flex items-center text-primary font-bold text-sm mt-2 gap-1 group-hover:gap-2 transition-all" href="#">
+                                Lire la suite <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Load More / Pagination -->
+<div class="mt-12 flex justify-center">
+<button class="px-8 py-3 rounded-lg border-2 border-primary text-[#0d1b12] dark:text-white font-bold hover:bg-primary transition-all flex items-center gap-2">
+                        Charger plus d'actualités
+                        <span class="material-symbols-outlined">refresh</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer Area -->
+<footer class="mt-20 border-t border-[#e7f3eb] dark:border-white/10 bg-white dark:bg-background-dark py-12 px-4">
+<div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-primary text-3xl">manufacturing</span>
+<h3 class="text-lg font-bold dark:text-white">Ministère des Industries Minières</h3>
+</div>
+<p class="text-[#4c9a66] text-sm max-w-sm">Site officiel du Ministère des Industries Minières et de la Géologie de la République du Congo. Assurant une gestion durable des ressources pour le développement national.</p>
+</div>
+<div>
+<h4 class="font-bold mb-4 dark:text-white">Liens Utiles</h4>
+<ul class="text-sm text-[#4c9a66] space-y-2">
+<li><a class="hover:text-primary" href="#">Journal Officiel</a></li>
+<li><a class="hover:text-primary" href="#">Plateforme E-Mines</a></li>
+<li><a class="hover:text-primary" href="#">Cadastre Minier</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-4 dark:text-white">Contact</h4>
+<p class="text-sm text-[#4c9a66]">Brazzaville, République du Congo</p>
+<p class="text-sm text-[#4c9a66]">contact@mines.gouv.cg</p>
+<div class="flex gap-4 mt-4">
+<span class="material-symbols-outlined text-primary">social_leaderboard</span>
+<span class="material-symbols-outlined text-primary">mail</span>
+</div>
+</div>
+</div>
+<div class="max-w-[1200px] mx-auto mt-12 pt-8 border-t border-[#e7f3eb] dark:border-white/10 text-center text-[10px] text-[#4c9a66] uppercase tracking-[0.2em]">
+            © 2025 Ministère des Industries Minières et de la Géologie - République du Congo
+        </div>
+</footer>
+</body></html>

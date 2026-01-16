@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Accueil Officiel - Ministère des Industries Minières et de la Géologie</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#14b84b",
+                        "secondary-yellow": "#fadb14",
+                        "accent-red": "#dc2626",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#0e1b12",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        body { font-family: "Public Sans", sans-serif; }
+        .hero-gradient {
+            background: linear-gradient(to right, rgba(14, 27, 18, 0.8), rgba(14, 27, 18, 0.2));
+        }
+        .flag-accent { height: 6px; background: linear-gradient(90deg, #14b84b 33%, #facc15 33% 66%, #ef4444 66%); }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#0e1b12] dark:text-white transition-colors duration-200">
+<div class="flag-accent w-full"></div>
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[#e7f3eb] dark:border-[#2a3f31] px-6 md:px-20 py-4 bg-white dark:bg-[#0e1b12] sticky top-0 z-50">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3 text-[#0e1b12] dark:text-white">
+<div class="size-8 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-sm md:text-lg font-bold leading-tight uppercase tracking-wide">Industries Minières</h2>
+</div>
+<nav class="hidden lg:flex items-center gap-6">
+<a class="text-sm font-bold text-primary border-b-2 border-primary pb-1" href="code.html">Accueil</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="ministere.html">Le Ministre</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="mission.html">Missions</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="actualite.html">Actualités</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="contacts.html">Contacts</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-primary/10 text-primary p-2 rounded-full lg:hidden">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<div class="hidden md:flex items-center bg-[#e7f3eb] dark:bg-[#1a2e21] rounded-lg px-3 py-1.5 border border-primary/10">
+<span class="material-symbols-outlined text-primary text-xl">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm w-32 lg:w-48" placeholder="Rechercher..." type="text"/>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 bg-primary text-white rounded-lg font-bold text-xs uppercase tracking-tighter shadow-sm">
+<span class="truncate">République du Congo</span>
+</div>
+</div>
+</header>
+<main class="flex-1 max-w-[1200px] mx-auto w-full px-4 py-8">
+<!-- Breadcrumbs -->
+<div class="flex items-center gap-2 mb-6">
+<a class="text-primary text-sm font-medium hover:underline" href="code.html">Accueil</a>
+<span class="material-symbols-outlined text-primary text-sm">chevron_right</span>
+<span class="text-[#0e1b12] dark:text-white/60 text-sm font-medium">Contact et Délégations</span>
+</div>
+<!-- PageHeading -->
+<div class="mb-12">
+<h1 class="text-[#0e1b12] dark:text-white text-4xl md:text-5xl font-black leading-tight tracking-[-0.033em] mb-4">Contactez-nous</h1>
+<p class="text-[#4e9767] dark:text-primary/80 text-lg max-w-2xl leading-normal">
+                    Pour toute information relative aux industries minières et à la géologie en République du Congo. Nos équipes centrales et départementales sont à votre écoute.
+                </p>
+</div>
+<!-- Main Contact Section -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-20">
+<!-- Left: Contact Form -->
+<div class="lg:col-span-2 bg-white dark:bg-background-dark/50 p-8 rounded-xl border border-[#d0e7d7] dark:border-white/10 shadow-sm">
+<h3 class="text-2xl font-bold mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">mail</span> Envoyez un message
+                    </h3>
+<form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex flex-col gap-2">
+<label class="text-[#0e1b12] dark:text-white text-sm font-semibold">Nom complet</label>
+<input class="form-input w-full rounded-lg border border-[#d0e7d7] dark:border-white/20 bg-background-light dark:bg-white/5 focus:ring-primary focus:border-primary h-12 px-4 outline-none" placeholder="Ex: Jean Koumou" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-[#0e1b12] dark:text-white text-sm font-semibold">Adresse Email</label>
+<input class="form-input w-full rounded-lg border border-[#d0e7d7] dark:border-white/20 bg-background-light dark:bg-white/5 focus:ring-primary focus:border-primary h-12 px-4 outline-none" placeholder="jean.k@example.cg" type="email"/>
+</div>
+<div class="flex flex-col gap-2 md:col-span-2">
+<label class="text-[#0e1b12] dark:text-white text-sm font-semibold">Objet de votre message</label>
+<select class="form-select w-full rounded-lg border border-[#d0e7d7] dark:border-white/20 bg-background-light dark:bg-white/5 focus:ring-primary focus:border-primary h-12 px-4 outline-none">
+<option>Demande d'informations générales</option>
+<option>Cadastre minier et titres</option>
+<option>Géologie et Cartographie</option>
+<option>Exploitation et Industrie</option>
+<option>Signalement environnemental</option>
+</select>
+</div>
+<div class="flex flex-col gap-2 md:col-span-2">
+<label class="text-[#0e1b12] dark:text-white text-sm font-semibold">Message</label>
+<textarea class="form-textarea w-full rounded-lg border border-[#d0e7d7] dark:border-white/20 bg-background-light dark:bg-white/5 focus:ring-primary focus:border-primary p-4 outline-none" placeholder="Votre message ici..." rows="5"></textarea>
+</div>
+<div class="md:col-span-2">
+<button class="w-full md:w-auto min-w-[200px] h-12 bg-primary text-white font-bold rounded-lg hover:brightness-110 shadow-lg shadow-primary/20 transition-all flex items-center justify-center gap-2">
+                                Envoyer le formulaire <span class="material-symbols-outlined">send</span>
+</button>
+</div>
+</form>
+</div>
+<!-- Right: Siège Social -->
+<div class="flex flex-col gap-6">
+<div class="bg-[#14b84b] text-white p-8 rounded-xl shadow-xl relative overflow-hidden group">
+<div class="absolute -top-10 -right-10 opacity-10 transform rotate-12 group-hover:rotate-0 transition-transform duration-500">
+<span class="material-symbols-outlined !text-[160px]">corporate_fare</span>
+</div>
+<h3 class="text-2xl font-bold mb-6 relative z-10">Siège Social</h3>
+<div class="space-y-6 relative z-10">
+<div class="flex gap-4">
+<span class="material-symbols-outlined bg-white/20 p-2 rounded-lg">location_on</span>
+<div>
+<p class="font-bold">Adresse</p>
+<p class="text-white/90">BP 2124, Centre Administratif<br/>Brazzaville, République du Congo</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined bg-white/20 p-2 rounded-lg">call</span>
+<div>
+<p class="font-bold">Téléphone</p>
+<p class="text-white/90">+242 05 551 12 12<br/>+242 06 661 24 24</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined bg-white/20 p-2 rounded-lg">mail</span>
+<div>
+<p class="font-bold">Email</p>
+<p class="text-white/90">contact@mines.gouv.cg</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Work Hours Card -->
+<div class="bg-white dark:bg-background-dark/50 border border-[#d0e7d7] dark:border-white/10 p-6 rounded-xl">
+<h4 class="font-bold mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">schedule</span> Horaires d'ouverture
+                        </h4>
+<div class="space-y-2 text-sm">
+<div class="flex justify-between">
+<span class="text-gray-600 dark:text-white/60">Lundi - Vendredi</span>
+<span class="font-medium">08:00 - 15:30</span>
+</div>
+<div class="flex justify-between border-t border-gray-100 dark:border-white/10 pt-2">
+<span class="text-gray-600 dark:text-white/60">Samedi - Dimanche</span>
+<span class="text-red-500 font-medium">Fermé</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Delegations Section -->
+<div class="mb-12">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
+<div>
+<h2 class="text-3xl font-black text-[#0e1b12] dark:text-white mb-2">Délégations Départementales</h2>
+<p class="text-[#4e9767] dark:text-primary/70">Retrouvez nos services de proximité dans les 12 départements du pays.</p>
+</div>
+<div class="flex gap-2">
+<div class="h-1 w-12 bg-primary rounded-full"></div>
+<div class="h-1 w-12 bg-congo-yellow rounded-full"></div>
+<div class="h-1 w-12 bg-congo-red rounded-full"></div>
+</div>
+</div>
+<!-- Grid of Delegations -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+<!-- Template for Delegation Card -->
+<!-- D1: Brazzaville -->
+<div class="bg-white dark:bg-background-dark/40 border border-[#d0e7d7] dark:border-white/10 p-6 rounded-xl hover:shadow-md transition-shadow group">
+<div class="h-24 w-full bg-gray-100 dark:bg-white/5 rounded-lg mb-4 flex items-center justify-center relative overflow-hidden">
+<img alt="Brazzaville map" class="absolute inset-0 w-full h-full object-cover opacity-20 grayscale group-hover:grayscale-0 group-hover:opacity-40 transition-all" data-alt="Abstract map of Brazzaville region" data-location="Brazzaville" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAEc8PUh2rIDxBkV2APSlkz_S3XI5K2VeqJAQTZ8uozyUyeX-MXuDamEoQeF16F54i2K3Ie-oIu30_SNeFCJ9KNkBOP8TJwEArhza4aHm2fyxeBpR6qo6Lwk70g79f8raW0YA0D8xfL-omKhIB6iqtAbl6ScZ1rc7AeakGomOxuLsZSXm_WnspY4z3d64opPUH5UfuyMbNl3PYt4UyKEHOHZMZ2d-82q21SVZAhyRk95ee92oZo3q6qEgP6_71zALktRKYHcCD27w"/>
+<span class="material-symbols-outlined text-primary text-4xl relative z-10">map</span>
+</div>
+<h4 class="text-xl font-bold mb-3">Brazzaville</h4>
+<div class="space-y-2 text-sm">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-xs mt-1 text-primary">location_on</span>
+<span class="dark:text-white/70">Avenue de l'Indépendance</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-xs mt-1 text-primary">call</span>
+<span class="dark:text-white/70">+242 05 111 22 33</span>
+</div>
+</div>
+</div>
+<!-- D2: Pointe-Noire -->
+<div class="bg-white dark:bg-background-dark/40 border border-[#d0e7d7] dark:border-white/10 p-6 rounded-xl hover:shadow-md transition-shadow group">
+<div class="h-24 w-full bg-gray-100 dark:bg-white/5 rounded-lg mb-4 flex items-center justify-center relative overflow-hidden">
+<img alt="Pointe-Noire region" class="absolute inset-0 w-full h-full object-cover opacity-20 grayscale group-hover:grayscale-0 group-hover:opacity-40 transition-all" data-alt="Aerial view pattern of Pointe-Noire coastline" data-location="Pointe-Noire" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjRFEXjL8vnWcGKzgg_3j3xu1Dr2YR-foUEwmotKI_FNFLcGL12fBvEF4qrRV65bDKiQRwKRz1xmDpOtoVPcYa3E3zL6YYOdNt7UVfe4_AtNDSXBGTtFjDeZ3wY_au2_yBL9e-JT8UAns1BkYPSz_HvQHCydlpjkd4giQRzkSm0MpLC_qbaoHr_c8SBw7r0_2dM60gtzmpVhg0lS-jvgMHAbp5tesJzppp-XJQZpMRKbmYl_9SC_VrqoEuZoVJi41TXtS9DNOKPAM"/>
+<span class="material-symbols-outlined text-primary text-4xl relative z-10">explore</span>
+</div>
+<h4 class="text-xl font-bold mb-3">Pointe-Noire</h4>
+<div class="space-y-2 text-sm">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-xs mt-1 text-primary">location_on</span>
+<span class="dark:text-white/70">Zone Industrielle, Port Autonome</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-xs mt-1 text-primary">call</span>
+<span class="dark:text-white/70">+242 06 222 33 44</span>
+</div>
+</div>
+</div>
+<!-- D3: Niari -->
+<div class="bg-white dark:bg-background-dark/40 border border-[#d0e7d7] dark:border-white/10 p-6 rounded-xl hover:shadow-md transition-shadow group">
+<div class="h-24 w-full bg-gray-100 dark:bg-white/5 rounded-lg mb-4 flex items-center justify-center relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent"></div>
+<span class="material-symbols-outlined text-primary text-4xl relative z-10">terrain</span>
+</div>
+<h4 class="text-xl font-bold mb-3">Niari</h4>
+<div class="space-y-2 text-sm">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-xs mt-1 text-primary">location_on</span>
+<span class="dark:text-white/70">Centre-ville, Dolisie</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-xs mt-1 text-primary">call</span>
+<span class="dark:text-white/70">+242 05 333 44 55</span>
+</div>
+</div>
+</div>
+<!-- D4: Bouenza -->
+<div class="bg-white dark:bg-background-dark/40 border border-[#d0e7d7] dark:border-white/10 p-6 rounded-xl hover:shadow-md transition-shadow group">
+<div class="h-24 w-full bg-gray-100 dark:bg-white/5 rounded-lg mb-4 flex items-center justify-center relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-congo-yellow/10 to-transparent"></div>
+<span class="material-symbols-outlined text-primary text-4xl relative z-10">factory</span>
+</div>
+<h4 class="text-xl font-bold mb-3">Bouenza</h4>
+<div class="space-y-2 text-sm">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-xs mt-1 text-primary">location_on</span>
+<span class="dark:text-white/70">Madingou, Quartier Administratif</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-xs mt-1 text-primary">call</span>
+<span class="dark:text-white/70">+242 05 444 55 66</span>
+</div>
+</div>
+</div>
+<!-- D5: Lékoumou -->
+<div class="bg-white dark:bg-background-dark/40 border border-[#d0e7d7] dark:border-white/10 p-6 rounded-xl hover:shadow-md transition-shadow group">
+<div class="h-24 w-full bg-gray-100 dark:bg-white/5 rounded-lg mb-4 flex items-center justify-center relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-congo-red/5 to-transparent"></div>
+<span class="material-symbols-outlined text-primary text-4xl relative z-10">manufacturing</span>
+</div>
+<h4 class="text-xl font-bold mb-3">Lékoumou</h4>
+<div class="space-y-2 text-sm">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-xs mt-1 text-primary">location_on</span>
+<span class="dark:text-white/70">Sibiti, Face à la Préfecture</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-xs mt-1 text-primary">call</span>
+<span class="dark:text-white/70">+242 06 555 66 77</span>
+</div>
+</div>
+</div>
+<!-- D6: Pool -->
+<div class="bg-white dark:bg-background-dark/40 border border-[#d0e7d7] dark:border-white/10 p-6 rounded-xl hover:shadow-md transition-shadow group">
+<div class="h-24 w-full bg-gray-100 dark:bg-white/5 rounded-lg mb-4 flex items-center justify-center relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent"></div>
+<span class="material-symbols-outlined text-primary text-4xl relative z-10">water_drop</span>
+</div>
+<h4 class="text-xl font-bold mb-3">Pool</h4>
+<div class="space-y-2 text-sm">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-xs mt-1 text-primary">location_on</span>
+<span class="dark:text-white/70">Kinkala, Route Nationale 1</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-xs mt-1 text-primary">call</span>
+<span class="dark:text-white/70">+242 05 666 77 88</span>
+</div>
+</div>
+</div>
+<!-- D7: Plateaux -->
+<div class="bg-white dark:bg-background-dark/40 border border-[#d0e7d7] dark:border-white/10 p-6 rounded-xl hover:shadow-md transition-shadow group">
+<div class="h-24 w-full bg-gray-100 dark:bg-white/5 rounded-lg mb-4 flex items-center justify-center relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-congo-yellow/10 to-transparent"></div>
+<span class="material-symbols-outlined text-primary text-4xl relative z-10">landscape</span>
+</div>
+<h4 class="text-xl font-bold mb-3">Plateaux</h4>
+<div class="space-y-2 text-sm">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-xs mt-1 text-primary">location_on</span>
+<span class="dark:text-white/70">Djambala, Secteur Nord</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-xs mt-1 text-primary">call</span>
+<span class="dark:text-white/70">+242 06 777 88 99</span>
+</div>
+</div>
+</div>
+<!-- D8: Cuvette -->
+<div class="bg-white dark:bg-background-dark/40 border border-[#d0e7d7] dark:border-white/10 p-6 rounded-xl hover:shadow-md transition-shadow group">
+<div class="h-24 w-full bg-gray-100 dark:bg-white/5 rounded-lg mb-4 flex items-center justify-center relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-congo-red/5 to-transparent"></div>
+<span class="material-symbols-outlined text-primary text-4xl relative z-10">waves</span>
+</div>
+<h4 class="text-xl font-bold mb-3">Cuvette</h4>
+<div class="space-y-2 text-sm">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-xs mt-1 text-primary">location_on</span>
+<span class="dark:text-white/70">Owando, Avenue de la Cuvette</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-xs mt-1 text-primary">call</span>
+<span class="dark:text-white/70">+242 05 888 99 00</span>
+</div>
+</div>
+</div>
+<!-- D9: Cuvette-Ouest -->
+<div class="bg-white dark:bg-background-dark/40 border border-[#d0e7d7] dark:border-white/10 p-6 rounded-xl hover:shadow-md transition-shadow group">
+<div class="h-24 w-full bg-gray-100 dark:bg-white/5 rounded-lg mb-4 flex items-center justify-center relative overflow-hidden">
+<span class="material-symbols-outlined text-primary text-4xl relative z-10">location_searching</span>
+</div>
+<h4 class="text-xl font-bold mb-3">Cuvette-Ouest</h4>
+<div class="space-y-2 text-sm">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-xs mt-1 text-primary">location_on</span>
+<span class="dark:text-white/70">Ewo, Bâtiment Administratif</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-xs mt-1 text-primary">call</span>
+<span class="dark:text-white/70">+242 06 999 00 11</span>
+</div>
+</div>
+</div>
+<!-- D10: Sangha -->
+<div class="bg-white dark:bg-background-dark/40 border border-[#d0e7d7] dark:border-white/10 p-6 rounded-xl hover:shadow-md transition-shadow group">
+<div class="h-24 w-full bg-gray-100 dark:bg-white/5 rounded-lg mb-4 flex items-center justify-center relative overflow-hidden">
+<span class="material-symbols-outlined text-primary text-4xl relative z-10">forest</span>
+</div>
+<h4 class="text-xl font-bold mb-3">Sangha</h4>
+<div class="space-y-2 text-sm">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-xs mt-1 text-primary">location_on</span>
+<span class="dark:text-white/70">Ouesso, Zone Portuaire</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-xs mt-1 text-primary">call</span>
+<span class="dark:text-white/70">+242 05 000 11 22</span>
+</div>
+</div>
+</div>
+<!-- D11: Likouala -->
+<div class="bg-white dark:bg-background-dark/40 border border-[#d0e7d7] dark:border-white/10 p-6 rounded-xl hover:shadow-md transition-shadow group">
+<div class="h-24 w-full bg-gray-100 dark:bg-white/5 rounded-lg mb-4 flex items-center justify-center relative overflow-hidden">
+<span class="material-symbols-outlined text-primary text-4xl relative z-10">anchor</span>
+</div>
+<h4 class="text-xl font-bold mb-3">Likouala</h4>
+<div class="space-y-2 text-sm">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-xs mt-1 text-primary">location_on</span>
+<span class="dark:text-white/70">Impfondo, Avenue du Fleuve</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-xs mt-1 text-primary">call</span>
+<span class="dark:text-white/70">+242 06 111 22 44</span>
+</div>
+</div>
+</div>
+<!-- D12: Kouilou -->
+<div class="bg-white dark:bg-background-dark/40 border border-[#d0e7d7] dark:border-white/10 p-6 rounded-xl hover:shadow-md transition-shadow group">
+<div class="h-24 w-full bg-gray-100 dark:bg-white/5 rounded-lg mb-4 flex items-center justify-center relative overflow-hidden">
+<span class="material-symbols-outlined text-primary text-4xl relative z-10">diamond</span>
+</div>
+<h4 class="text-xl font-bold mb-3">Kouilou</h4>
+<div class="space-y-2 text-sm">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-xs mt-1 text-primary">location_on</span>
+<span class="dark:text-white/70">Loango, Cité Administrative</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-xs mt-1 text-primary">call</span>
+<span class="dark:text-white/70">+242 05 222 33 55</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-white dark:bg-background-dark border-t border-[#e7f3eb] dark:border-white/10 py-12 px-4">
+<div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="md:col-span-2">
+<div class="flex items-center gap-2 mb-6">
+<div class="size-6 text-primary">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z"></path>
+</svg>
+</div>
+<span class="text-xl font-bold">Ministère des Mines du Congo</span>
+</div>
+<p class="text-gray-500 dark:text-white/60 mb-8 max-w-sm">
+                        Site officiel du Ministère des Industries Minières et de la Géologie. Gouvernement de la République du Congo.
+                    </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 flex items-center justify-center rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">public</span>
+</a>
+<a class="w-10 h-10 flex items-center justify-center rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">share</span>
+</a>
+<a class="w-10 h-10 flex items-center justify-center rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">rss_feed</span>
+</a>
+</div>
+</div>
+<div>
+<h5 class="font-bold mb-6">Liens Rapides</h5>
+<ul class="space-y-4 text-gray-500 dark:text-white/60 text-sm">
+<li><a class="hover:text-primary" href="#">Journal Officiel</a></li>
+<li><a class="hover:text-primary" href="#">Cadastre Minier</a></li>
+<li><a class="hover:text-primary" href="#">Statistiques</a></li>
+<li><a class="hover:text-primary" href="#">Appels d'offres</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold mb-6">Légal</h5>
+<ul class="space-y-4 text-gray-500 dark:text-white/60 text-sm">
+<li><a class="hover:text-primary" href="#">Mentions Légales</a></li>
+<li><a class="hover:text-primary" href="#">Données Personnelles</a></li>
+<li><a class="hover:text-primary" href="#">Plan du site</a></li>
+<li><a class="hover:text-primary" href="#">Accessibilité</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-[1200px] mx-auto mt-12 pt-8 border-t border-[#e7f3eb] dark:border-white/10 text-center text-xs text-gray-400">
+                © 2024 Ministère des Industries Minières et de la Géologie. Tous droits réservés.
+            </div>
+</footer>
+</div>
+</body></html>

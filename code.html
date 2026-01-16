@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Accueil Officiel - Ministère des Industries Minières et de la Géologie</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#14b84b",
+                        "secondary-yellow": "#fadb14",
+                        "accent-red": "#dc2626",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#0e1b12",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        body { font-family: "Public Sans", sans-serif; }
+        .hero-gradient {
+            background: linear-gradient(to right, rgba(14, 27, 18, 0.8), rgba(14, 27, 18, 0.2));
+        }
+        .flag-accent { height: 6px; background: linear-gradient(90deg, #14b84b 33%, #facc15 33% 66%, #ef4444 66%); }
+        
+    </style>
+    
+    
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#0e1b12] dark:text-white transition-colors duration-200">
+<div class="flag-accent w-full"></div>
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[#e7f3eb] dark:border-[#2a3f31] px-6 md:px-20 py-4 bg-white dark:bg-[#0e1b12] sticky top-0 z-50">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3 text-[#0e1b12] dark:text-white">
+<div class="size-8 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-sm md:text-lg font-bold leading-tight uppercase tracking-wide">Industries Minières</h2>
+</div>
+<nav class="hidden lg:flex items-center gap-6">
+<a class="text-sm font-bold text-primary border-b-2 border-primary pb-1" href="code.html">Accueil</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="ministere.html">Le Ministre</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="mission.html">Missions</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="actualite.html">Actualités</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="contacts.html">Contacts</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<button id="mobileMenuBtn" class="bg-primary/10 text-primary p-2 rounded-full lg:hidden">
+  <span class="material-symbols-outlined">menu</span>
+</button>
+
+<div class="hidden md:flex items-center bg-[#e7f3eb] dark:bg-[#1a2e21] rounded-lg px-3 py-1.5 border border-primary/10">
+<span class="material-symbols-outlined text-primary text-xl">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm w-32 lg:w-48" placeholder="Rechercher..." type="text"/>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 bg-primary text-white rounded-lg font-bold text-xs uppercase tracking-tighter shadow-sm">
+<span class="truncate">République du Congo</span>
+</div>
+</div>
+</header>
+<!-- MENU MOBILE -->
+<div id="mobileMenu"
+     class="fixed inset-0 bg-white dark:bg-[#0e1b12] z-50 hidden lg:hidden flex-col">
+
+  <!-- Header menu mobile -->
+  <div class="flex items-center justify-between px-6 py-4 border-b border-gray-200 dark:border-[#2a3f31]">
+    <h3 class="font-bold uppercase tracking-wide text-primary">
+      Menu
+    </h3>
+    <button id="closeMobileMenu" class="text-primary">
+      <span class="material-symbols-outlined text-3xl">close</span>
+    </button>
+  </div>
+
+  <!-- Liens -->
+  <nav class="flex flex-col px-6 py-8 gap-6 text-lg font-semibold">
+    <a href="code.html" class="hover:text-primary">Accueil</a>
+    <a href="ministere.html" class="hover:text-primary">Le Ministre</a>
+    <a href="mission.html" class="hover:text-primary">Missions</a>
+    <a href="actualite.html" class="hover:text-primary">Actualités</a>
+    <a href="contacts.html" class="hover:text-primary">Contacts</a>
+  </nav>
+
+  <!-- Footer menu -->
+  <div class="mt-auto px-6 py-6 border-t border-gray-200 dark:border-[#2a3f31] text-xs text-gray-400">
+    République du Congo<br>
+    Ministère des Industries Minières
+  </div>
+</div>
+
+<main class="flex-1">
+<section class="relative h-[600px] w-full overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 scale-105" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDoK2SaD0PIjliuwJm6Q6-zDQfJ-caGZ_LOOKpPhm5aSa2ysHa1wHVY6lraeswi6rMvgRlsKUGGCk4pd6Y4PMZ6bKN_HKdnkZbaA92MkXTs63y16lioCPQppet1mhFTIV0zhd7-LhlaRCLKGs5hFc2kUbg4dWow1sRze_WhiarWnt2A49PPKJ054OmtFmixU8PJJ9gIgh8x2t974YyLNjunOyL7yxTWid1MozEtUxlo6NQvPkKZmuGKY_Ysa7w9HkLcVql8r21rIiU');"></div>
+<div class="absolute inset-0 hero-gradient"></div>
+<div class="relative h-full max-w-[1200px] mx-auto px-6 md:px-10 flex flex-col justify-center items-start text-white">
+<div class="flex gap-2 mb-6">
+<div class="w-12 h-1 bg-primary"></div>
+<div class="w-12 h-1 bg-secondary-yellow"></div>
+<div class="w-12 h-1 bg-accent-red"></div>
+</div>
+<h1 class="text-4xl md:text-6xl font-bold max-w-2xl leading-tight mb-4">Transformer le potentiel géologique en levier de croissance</h1>
+<p class="text-lg md:text-xl text-gray-200 max-w-xl mb-8 leading-relaxed">Le Ministère des Industries Minières et de la Géologie œuvre pour une exploitation durable et responsable des richesses du sol congolais.</p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary hover:bg-primary/90 text-white font-bold py-4 px-8 rounded-lg transition-all flex items-center gap-2 shadow-xl shadow-primary/20">
+                            Découvrir nos Projets
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white font-bold py-4 px-8 rounded-lg transition-all border border-white/20">
+                            Le Cadastre Minier
+                        </button>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex gap-3">
+<button class="size-3 rounded-full bg-primary"></button>
+<button class="size-3 rounded-full bg-white/30"></button>
+<button class="size-3 rounded-full bg-white/30"></button>
+</div>
+</section>
+
+
+
+<section class="max-w-[1200px] mx-auto px-6 md:px-10 -mt-16 relative z-10">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-white dark:bg-[#1a2e21] p-8 rounded-xl shadow-xl border border-primary/10 group hover:border-primary transition-colors cursor-pointer">
+<div class="size-14 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-3xl">map</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Cadastre Minier</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed mb-4">Accédez à la cartographie dynamique des titres miniers et suivez la disponibilité des périmètres en temps réel.</p>
+<a class="text-primary text-sm font-bold flex items-center gap-2 hover:underline" href="carte.html">
+                            Accéder au portail <span class="material-symbols-outlined text-base">open_in_new</span>
+</a>
+</div>
+<div class="bg-white dark:bg-[#1a2e21] p-8 rounded-xl shadow-xl border border-secondary-yellow/10 group hover:border-secondary-yellow transition-colors cursor-pointer">
+<div class="size-14 bg-secondary-yellow/10 rounded-lg flex items-center justify-center text-secondary-yellow mb-6 group-hover:bg-secondary-yellow group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-3xl">description</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Procédures d'Octroi</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed mb-4">Guide complet sur les démarches administratives pour l'obtention des permis de recherche et d'exploitation.</p>
+<a class="text-primary text-sm font-bold flex items-center gap-2 hover:underline" href="octroi.html">
+                            Consulter le guide <span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+<div class="bg-white dark:bg-[#1a2e21] p-8 rounded-xl shadow-xl border border-accent-red/10 group hover:border-accent-red transition-colors cursor-pointer">
+<div class="size-14 bg-accent-red/10 rounded-lg flex items-center justify-center text-accent-red mb-6 group-hover:bg-accent-red group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-3xl">gavel</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Réglementations</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed mb-4">Téléchargez le Code Minier révisé et l'ensemble des textes législatifs régissant le secteur extractif.</p>
+<a class="text-primary text-sm font-bold flex items-center gap-2 hover:underline" href="reglement.html">
+                            Voir les textes <span class="material-symbols-outlined text-base">download</span>
+</a>
+</div>
+</div>
+</section>
+<section class="max-w-[1200px] mx-auto px-6 md:px-10 py-24">
+  <div class="text-center mb-16">
+    <span class="text-primary font-bold uppercase tracking-widest text-sm">
+      Patrimoine géologique
+    </span>
+    <h2 class="text-3xl md:text-4xl font-bold mt-3">
+      Nos Ressources Minières
+    </h2>
+    <p class="text-gray-500 dark:text-gray-400 max-w-2xl mx-auto mt-4">
+      La République du Congo dispose d’un sous-sol riche et diversifié, constituant
+      un levier stratégique pour le développement économique national.
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+    <!-- FER -->
+    <div class="bg-white dark:bg-[#1a2e21] rounded-xl shadow-lg border border-primary/10 overflow-hidden group hover:border-primary transition-colors">
+      <img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e"
+           alt="Minerai de fer Congo"
+           class="h-40 w-full object-cover group-hover:scale-105 transition-transform duration-500">
+      <div class="p-6">
+        <h3 class="font-bold text-lg mb-2">Minerai de Fer</h3>
+        <p class="text-sm text-gray-500 dark:text-gray-400">
+          Importants gisements localisés notamment à Mayoko et Zanaga,
+          positionnant le Congo parmi les pays à fort potentiel sidérurgique.
+        </p>
+      </div>
+    </div>
+
+    <!-- POTASSE -->
+    <div class="bg-white dark:bg-[#1a2e21] rounded-xl shadow-lg border border-secondary-yellow/10 overflow-hidden group hover:border-secondary-yellow transition-colors">
+      <img src="https://images.unsplash.com/photo-1626197031507-c17099753214"
+           alt="Potasse Congo"
+           class="h-40 w-full object-cover group-hover:scale-105 transition-transform duration-500">
+      <div class="p-6">
+        <h3 class="font-bold text-lg mb-2">Potasse</h3>
+        <p class="text-sm text-gray-500 dark:text-gray-400">
+          Ressource stratégique présente sur la côte atlantique,
+          destinée principalement à la production d’engrais.
+        </p>
+      </div>
+    </div>
+
+    <!-- OR -->
+    <div class="bg-white dark:bg-[#1a2e21] rounded-xl shadow-lg border border-accent-red/10 overflow-hidden group hover:border-accent-red transition-colors">
+      <img src="https://images.unsplash.com/photo-1611078489935-0cb964de46d6"
+           alt="Or artisanal Congo"
+           class="h-40 w-full object-cover group-hover:scale-105 transition-transform duration-500">
+      <div class="p-6">
+        <h3 class="font-bold text-lg mb-2">Or</h3>
+        <p class="text-sm text-gray-500 dark:text-gray-400">
+          Exploité principalement de manière artisanale dans le nord du pays,
+          l’or constitue une ressource à fort potentiel de formalisation.
+        </p>
+      </div>
+    </div>
+
+    <!-- DIAMANT -->
+    <div class="bg-white dark:bg-[#1a2e21] rounded-xl shadow-lg border border-primary/10 overflow-hidden group hover:border-primary transition-colors">
+      <img src="https://images.unsplash.com/photo-1609250291996-fdebe6020a8f"
+           alt="Diamant Congo"
+           class="h-40 w-full object-cover group-hover:scale-105 transition-transform duration-500">
+      <div class="p-6">
+        <h3 class="font-bold text-lg mb-2">Diamant</h3>
+        <p class="text-sm text-gray-500 dark:text-gray-400">
+          Présent dans certaines zones alluvionnaires,
+          le diamant congolais contribue au secteur artisanal et à l’exportation.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="max-w-[1200px] mx-auto px-6 md:px-10 py-24">
+<div class="flex items-end justify-between mb-12">
+<div>
+<span class="text-primary font-bold uppercase tracking-widest text-sm">Communication</span>
+<h2 class="text-3xl font-bold mt-2">Dernières Actualités</h2>
+</div>
+<a class="text-gray-500 hover:text-primary font-bold text-sm border-b border-gray-300 pb-1" href="#">Toutes les actualités</a>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<article class="lg:col-span-2 group cursor-pointer">
+<div class="relative overflow-hidden rounded-2xl aspect-[16/9] mb-6">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCac4lOhjFjCbBEAloPqbFhHom-LlX-Fr19ceglVDsYoah9wWv9QlkNNUP1dBxBU_Edn13A7POvrRB3IiNhKKOucfK_yMYiZTKZSw9LUM-rtuN4sYipfaUCnPESejECovE1iny6RGY7QE5bNIRu8XEPqPcRqNSiv9JPBfpeXHz7Hb-zmrGx5syd2rAnBHn4t7BI76dfbyTw4jyBs9JwdTbrUgDIaSszfb_8RVVu9UN9z9iw1EjCEHRPyZrw42hsxFn7Bu5aCE-Ue9Y');"></div>
+<div class="absolute top-4 left-4 bg-primary text-white text-xs font-bold py-1 px-3 rounded uppercase">Important</div>
+</div>
+<div class="flex flex-col gap-3">
+<div class="flex items-center gap-4 text-xs font-bold text-gray-400">
+<span>29 AVRIL 2025</span>
+<span class="w-1 h-1 rounded-full bg-gray-300"></span>
+<span>COMMUNIQUÉ OFFICIEL</span>
+</div>
+<h3 class="text-2xl md:text-3xl font-bold group-hover:text-primary transition-colors">Note de service : Renforcement des inspections départementales dans le secteur minier</h3>
+<p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+                                Le Ministre d'État Pierre Oba a signé ce jour une directive majeure visant à intensifier le contrôle technique et administratif sur l'ensemble du territoire national pour garantir la conformité des exploitations...
+                            </p>
+<a class="mt-2 text-primary font-bold flex items-center gap-2" href="#">
+                                Lire la suite
+                                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</article>
+<div class="flex flex-col gap-8">
+<div class="group cursor-pointer border-b border-gray-100 dark:border-[#2a3f31] pb-6">
+<span class="text-xs font-bold text-primary mb-2 block">15 AVRIL 2025</span>
+<h4 class="font-bold leading-snug group-hover:text-primary transition-colors">Partenariat stratégique : signature d'un protocole d'accord pour le fer de Mayoko</h4>
+</div>
+<div class="group cursor-pointer border-b border-gray-100 dark:border-[#2a3f31] pb-6">
+<span class="text-xs font-bold text-primary mb-2 block">02 AVRIL 2025</span>
+<h4 class="font-bold leading-snug group-hover:text-primary transition-colors">Lancement du recensement national des artisans miniers de la zone sud</h4>
+</div>
+<div class="group cursor-pointer border-b border-gray-100 dark:border-[#2a3f31] pb-6">
+<span class="text-xs font-bold text-primary mb-2 block">28 MARS 2025</span>
+<h4 class="font-bold leading-snug group-hover:text-primary transition-colors">Conférence internationale : le Congo présente ses opportunités à INDABA Cape Town</h4>
+</div>
+<div class="bg-gray-50 dark:bg-[#1a2e21] p-6 rounded-xl border border-primary/10">
+<h4 class="font-bold mb-3 flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined">notifications_active</span>
+                                Alertes Mails
+                            </h4>
+<p class="text-xs text-gray-500 mb-4">Recevez les nouveaux décrets et appels d'offres directement.</p>
+<div class="flex">
+<input class="flex-1 text-xs border-primary/20 bg-white dark:bg-[#0e1b12] rounded-l-lg focus:ring-primary focus:border-primary" placeholder="votre@email.cg" type="email"/>
+<button class="bg-primary text-white p-2 rounded-r-lg">
+<span class="material-symbols-outlined text-sm">send</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-white dark:bg-[#0e1b12] border-y border-[#e7f3eb] dark:border-[#2a3f31] py-16">
+<div class="max-w-[1200px] mx-auto px-6 md:px-10 flex flex-col md:flex-row items-center justify-between gap-10">
+<div class="flex-1">
+<h2 class="text-3xl font-bold mb-4">Statistiques du Secteur</h2>
+<p class="text-gray-500 dark:text-gray-400 mb-8 max-w-lg">Accédez aux données de production, aux rapports de l'ITIE et aux indicateurs de performance de l'industrie minière congolaise.</p>
+<div class="grid grid-cols-3 gap-8">
+<div>
+<span class="block text-2xl font-bold text-primary">12+</span>
+<span class="text-[10px] font-bold uppercase text-gray-400">Substances Exploitées</span>
+</div>
+<div>
+<span class="block text-2xl font-bold text-secondary-yellow">450</span>
+<span class="text-[10px] font-bold uppercase text-gray-400">Titres Actifs</span>
+</div>
+<div>
+<span class="block text-2xl font-bold text-accent-red">15%</span>
+<span class="text-[10px] font-bold uppercase text-gray-400">Part du PIB (Obj 2030)</span>
+</div>
+</div>
+</div>
+<div class="size-64 bg-center bg-contain bg-no-repeat opacity-20 md:opacity-100" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBsoHnMEbFMUTEVZUwWl4OaeDUk6gNyh1qrjBdYdSEAd8NGh4MV7IwE_MpQx0P5Pyb7FIX_jiTdYB5v5skgIM_pPMhLF2O01-n7h_BikIFJiyt7sP59SF2vptdwPKl_WslVJxmCppPLBMvKonevzacMEXn1CnNQlTvMOiTG3986fDGX7WG1OH7lpix-0cFb1hJ6DwYHm7NBnXVvpYTYUesd2h1qc2qTp6Lp-HHBXxT71O9aAQSK_d7HKNB5jRWZK4U661GCQ4Gq16o');"></div>
+</div>
+</section>
+</main>
+<footer class="bg-white dark:bg-[#0e1b12] border-t border-[#e7f3eb] dark:border-[#2a3f31] py-12">
+<div class="max-w-[1200px] mx-auto px-6 md:px-10 grid grid-cols-1 md:grid-cols-3 gap-12 text-sm">
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined">diamond</span>
+<h3 class="font-bold uppercase tracking-widest">Mines &amp; Géologie</h3>
+</div>
+<p class="text-gray-500 dark:text-gray-400 leading-relaxed">
+                        Portail officiel du Ministère des Industries Minières de la République du Congo. Une plateforme dédiée à la transparence, au développement et à l'excellence opérationnelle.
+                    </p>
+<div class="flex gap-4">
+<a class="size-8 rounded-full bg-gray-100 dark:bg-[#1a2e21] flex items-center justify-center hover:bg-primary hover:text-white transition-colors" href="#">
+<svg class="size-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg>
+</a>
+<a class="size-8 rounded-full bg-gray-100 dark:bg-[#1a2e21] flex items-center justify-center hover:bg-primary hover:text-white transition-colors" href="#">
+<svg class="size-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+</a>
+</div>
+</div>
+<div class="flex flex-col gap-6">
+<h4 class="font-bold text-[#0e1b12] dark:text-white text-base">Liens Utiles</h4>
+<ul class="flex flex-col gap-3 text-gray-500 dark:text-gray-400">
+<li><a class="hover:text-primary transition-colors flex items-center gap-2" href="#">Le Cadastre Minier <span class="material-symbols-outlined text-xs">link</span></a></li>
+<li><a class="hover:text-primary transition-colors flex items-center gap-2" href="#">Le Journal Officiel <span class="material-symbols-outlined text-xs">link</span></a></li>
+<li><a class="hover:text-primary transition-colors flex items-center gap-2" href="#">Investir en République du Congo <span class="material-symbols-outlined text-xs">link</span></a></li>
+<li><a class="hover:text-primary transition-colors flex items-center gap-2" href="#">Portail de l'EITI Congo <span class="material-symbols-outlined text-xs">link</span></a></li>
+</ul>
+</div>
+<div class="flex flex-col gap-6">
+<h4 class="font-bold text-[#0e1b12] dark:text-white text-base">Contactez-nous</h4>
+<div class="flex flex-col gap-4 text-gray-500 dark:text-gray-400">
+<p class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<span>Brazzaville, Boulevard Denis Sassou Nguesso<br/>Hôtel de Ville, BP 2124</span>
+</p>
+<p class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">mail</span>
+<span>contact@mines.gouv.cg</span>
+</p>
+<p class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">call</span>
+<span>+242 06 660 00 00</span>
+</p>
+</div>
+</div>
+</div>
+<div class="max-w-[1200px] mx-auto px-6 md:px-10 mt-12 pt-8 border-t border-gray-100 dark:border-[#2a3f31] flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] text-gray-400 uppercase tracking-widest font-bold">
+<div class="flex flex-col md:flex-row items-center gap-6">
+<p>© 2024 République du Congo - Tous droits réservés</p>
+<div class="flex gap-6">
+<a class="hover:text-primary" href="#">Mentions Légales</a>
+<a class="hover:text-primary" href="#">Politique de Confidentialité</a>
+<a class="hover:text-primary" href="#">Plan du site</a>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span>Unité</span>
+<span class="text-primary">•</span>
+<span>Travail</span>
+<span class="text-secondary-yellow">•</span>
+<span>Progrès</span>
+</div>
+</div>
+</footer>
+</div>
+
+<script>
+  const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+  const closeMobileMenu = document.getElementById("closeMobileMenu");
+
+  mobileMenuBtn.addEventListener("click", () => {
+    mobileMenu.classList.remove("hidden");
+    mobileMenu.classList.add("flex");
+  });
+
+  closeMobileMenu.addEventListener("click", () => {
+    mobileMenu.classList.add("hidden");
+    mobileMenu.classList.remove("flex");
+  });
+</script>
+
+
+</body></html>

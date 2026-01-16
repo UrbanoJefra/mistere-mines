@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Accueil Officiel - Ministère des Industries Minières et de la Géologie</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#14b84b",
+                        "secondary-yellow": "#fadb14",
+                        "accent-red": "#dc2626",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#0e1b12",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        body { font-family: "Public Sans", sans-serif; }
+        .hero-gradient {
+            background: linear-gradient(to right, rgba(14, 27, 18, 0.8), rgba(14, 27, 18, 0.2));
+        }
+        .flag-accent { height: 6px; background: linear-gradient(90deg, #14b84b 33%, #facc15 33% 66%, #ef4444 66%); }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-[#0e1b12] dark:text-white transition-colors duration-200">
+    <div class="flag-accent w-full"></div>
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[#e7f3eb] dark:border-[#2a3f31] px-6 md:px-20 py-4 bg-white dark:bg-[#0e1b12] sticky top-0 z-50">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3 text-[#0e1b12] dark:text-white">
+<div class="size-8 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-sm md:text-lg font-bold leading-tight uppercase tracking-wide">Industries Minières</h2>
+</div>
+<nav class="hidden lg:flex items-center gap-6">
+<a class="text-sm font-bold text-primary border-b-2 border-primary pb-1" href="code.html">Accueil</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="ministere.html">Le Ministre</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="mission.html">Missions</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="actualite.html">Actualités</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="contacts.html">Contacts</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-primary/10 text-primary p-2 rounded-full lg:hidden">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<div class="hidden md:flex items-center bg-[#e7f3eb] dark:bg-[#1a2e21] rounded-lg px-3 py-1.5 border border-primary/10">
+<span class="material-symbols-outlined text-primary text-xl">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm w-32 lg:w-48" placeholder="Rechercher..." type="text"/>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 bg-primary text-white rounded-lg font-bold text-xs uppercase tracking-tighter shadow-sm">
+<span class="truncate">République du Congo</span>
+</div>
+</div>
+</header>
+<main class="max-w-[1280px] mx-auto px-6 py-10">
+<!-- Floating Search Area -->
+<div class="mb-12 bg-white dark:bg-[#2c281a] p-2 rounded-xl shadow-xl shadow-black/5 flex flex-wrap items-center gap-2">
+<div class="flex-1 min-w-[300px] flex items-center gap-3 px-4 py-2 border-r border-[#f4f0e7] dark:border-[#3d382d]">
+<span class="material-symbols-outlined text-primary">search</span>
+<input class="w-full bg-transparent border-none focus:ring-0 text-base" placeholder="Rechercher une loi, un décret ou un arrêté..." type="text"/>
+</div>
+<div class="px-4 py-2 flex items-center gap-2 border-r border-[#f4f0e7] dark:border-[#3d382d]">
+<span class="material-symbols-outlined text-[#9c8749]">calendar_today</span>
+<select class="bg-transparent border-none focus:ring-0 text-sm font-medium">
+<option>Toutes les dates</option>
+<option>2024</option>
+<option>2023</option>
+</select>
+</div>
+<button class="bg-[#f4f0e7] dark:bg-[#3d382d] hover:bg-primary/20 px-6 py-3 rounded-lg text-sm font-bold transition-colors">
+                Rechercher
+            </button>
+</div>
+<div class="flex flex-col lg:flex-row gap-10">
+<!-- Left Side: Featured Code Minier -->
+<aside class="w-full lg:w-[420px] shrink-0">
+<div class="sticky top-24 space-y-6">
+<div class="bg-white dark:bg-[#2c281a] rounded-xl overflow-hidden shadow-2xl border border-[#f4f0e7] dark:border-[#3d382d]">
+<div class="aspect-[3/4] bg-[#fcfbf8] dark:bg-[#1a170c] p-10 flex flex-col items-center justify-center relative overflow-hidden">
+<div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(circle at 2px 2px, #f4c025 1px, transparent 0); background-size: 24px 24px;"></div>
+<!-- Cover Design -->
+<div class="relative z-10 w-full aspect-[2.5/3.5] bg-white dark:bg-[#221e10] shadow-[10px_20px_40px_rgba(0,0,0,0.2)] border-l-[12px] border-primary rounded-sm p-8 flex flex-col justify-between">
+<div class="space-y-4">
+<div class="w-12 h-1 bg-primary"></div>
+<h3 class="text-2xl font-black leading-tight">CODE MINIER DU CONGO</h3>
+<p class="text-xs font-bold text-primary tracking-widest uppercase">Édition Officielle 2024</p>
+</div>
+<div class="text-[10px] font-medium opacity-50 uppercase leading-relaxed">
+                                    Ministère des Industries Minières et de la Géologie
+                                </div>
+</div>
+</div>
+<div class="p-8 space-y-6">
+<div>
+<span class="px-3 py-1 bg-primary/10 text-primary text-[10px] font-bold rounded-full uppercase tracking-tighter">Document de Référence</span>
+<h2 class="text-2xl font-bold mt-2">Code Minier du Congo</h2>
+<p class="text-sm text-[#9c8749] mt-2 leading-relaxed">Texte intégral de la loi n°4-2005 et ses amendements récents. Définit les principes de gestion des mines et carrières.</p>
+</div>
+<ul class="space-y-3">
+<li class="flex items-start gap-3 text-sm">
+<span class="material-symbols-outlined text-primary mt-0.5">check_circle</span>
+<span>Régime des titres miniers et autorisations</span>
+</li>
+<li class="flex items-start gap-3 text-sm">
+<span class="material-symbols-outlined text-primary mt-0.5">check_circle</span>
+<span>Dispositions fiscales et douanières</span>
+</li>
+<li class="flex items-start gap-3 text-sm">
+<span class="material-symbols-outlined text-primary mt-0.5">check_circle</span>
+<span>Protection de l'environnement</span>
+</li>
+</ul>
+<button class="w-full bg-primary hover:brightness-105 text-[#1c180d] font-bold py-4 rounded-xl flex items-center justify-center gap-2 shadow-lg shadow-primary/20 transition-all">
+<span class="material-symbols-outlined">download</span>
+                                Télécharger le Code (PDF)
+                            </button>
+</div>
+</div>
+</div>
+</aside>
+<!-- Right Side: Documentation Grid -->
+<section class="flex-1 space-y-8">
+<div class="flex items-center justify-between border-b border-[#f4f0e7] dark:border-[#3d382d] pb-4">
+<h2 class="text-2xl font-bold">Ressources Documentaires</h2>
+<div class="flex gap-2">
+<button class="p-2 border border-[#f4f0e7] dark:border-[#3d382d] rounded-lg bg-white dark:bg-[#2c281a]">
+<span class="material-symbols-outlined">grid_view</span>
+</button>
+<button class="p-2 border border-[#f4f0e7] dark:border-[#3d382d] rounded-lg">
+<span class="material-symbols-outlined">format_list_bulleted</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- LOI Card (Green) -->
+<div class="group bg-white dark:bg-[#2c281a] p-6 rounded-xl border border-[#f4f0e7] dark:border-[#3d382d] hover:shadow-xl transition-all duration-300">
+<div class="flex justify-between items-start mb-4">
+<div class="size-12 bg-congo-green/10 text-congo-green rounded-lg flex items-center justify-center group-hover:bg-congo-green group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">gavel</span>
+</div>
+<span class="px-3 py-1 bg-congo-green text-white text-[10px] font-bold rounded-full">LOI</span>
+</div>
+<h4 class="font-bold text-lg mb-2 line-clamp-2">Loi n° 5-2011 relative à la protection de l'environnement</h4>
+<p class="text-sm text-[#9c8749] mb-6 line-clamp-3 italic">Définition des normes environnementales applicables aux sites d'exploitation minière en zone forestière.</p>
+<div class="flex items-center justify-between border-t border-[#f4f0e7] dark:border-[#3d382d] pt-4 mt-auto">
+<span class="text-xs font-medium opacity-60">12 Mars 2011</span>
+<button class="text-primary font-bold text-sm flex items-center gap-1 hover:underline">
+                                Voir <span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</button>
+</div>
+</div>
+<!-- DECRET Card (Yellow) -->
+<div class="group bg-white dark:bg-[#2c281a] p-6 rounded-xl border border-[#f4f0e7] dark:border-[#3d382d] hover:shadow-xl transition-all duration-300">
+<div class="flex justify-between items-start mb-4">
+<div class="size-12 bg-primary/10 text-primary rounded-lg flex items-center justify-center group-hover:bg-primary group-hover:text-[#1c180d] transition-colors">
+<span class="material-symbols-outlined">description</span>
+</div>
+<span class="px-3 py-1 bg-primary text-[#1c180d] text-[10px] font-bold rounded-full">DÉCRET</span>
+</div>
+<h4 class="font-bold text-lg mb-2 line-clamp-2">Décret n° 2007-274 fixant les conditions d'attribution des titres</h4>
+<p class="text-sm text-[#9c8749] mb-6 line-clamp-3 italic">Modalités pratiques pour l'obtention des permis de recherche et d'exploitation pour les métaux précieux.</p>
+<div class="flex items-center justify-between border-t border-[#f4f0e7] dark:border-[#3d382d] pt-4 mt-auto">
+<span class="text-xs font-medium opacity-60">15 Mai 2007</span>
+<button class="text-primary font-bold text-sm flex items-center gap-1 hover:underline">
+                                Voir <span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</button>
+</div>
+</div>
+<!-- ARRETE Card (Red) -->
+<div class="group bg-white dark:bg-[#2c281a] p-6 rounded-xl border border-[#f4f0e7] dark:border-[#3d382d] hover:shadow-xl transition-all duration-300">
+<div class="flex justify-between items-start mb-4">
+<div class="size-12 bg-congo-red/10 text-congo-red rounded-lg flex items-center justify-center group-hover:bg-congo-red group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">verified_user</span>
+</div>
+<span class="px-3 py-1 bg-congo-red text-white text-[10px] font-bold rounded-full">ARRÊTÉ</span>
+</div>
+<h4 class="font-bold text-lg mb-2 line-clamp-2">Arrêté Ministériel n° 458-2022 sur la sécurité des sites</h4>
+<p class="text-sm text-[#9c8749] mb-6 line-clamp-3 italic">Nouvelles mesures de sécurité obligatoires pour l'exploitation artisanale dans le Kouilou.</p>
+<div class="flex items-center justify-between border-t border-[#f4f0e7] dark:border-[#3d382d] pt-4 mt-auto">
+<span class="text-xs font-medium opacity-60">22 Octobre 2022</span>
+<button class="text-primary font-bold text-sm flex items-center gap-1 hover:underline">
+                                Voir <span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</button>
+</div>
+</div>
+<!-- CONVENTION Card (Neutral) -->
+<div class="group bg-white dark:bg-[#2c281a] p-6 rounded-xl border border-[#f4f0e7] dark:border-[#3d382d] hover:shadow-xl transition-all duration-300">
+<div class="flex justify-between items-start mb-4">
+<div class="size-12 bg-[#9c8749]/10 text-[#9c8749] rounded-lg flex items-center justify-center group-hover:bg-[#9c8749] group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">handshake</span>
+</div>
+<span class="px-3 py-1 bg-[#9c8749] text-white text-[10px] font-bold rounded-full">CONVENTION</span>
+</div>
+<h4 class="font-bold text-lg mb-2 line-clamp-2">Convention Minière Type (Mise à jour 2023)</h4>
+<p class="text-sm text-[#9c8749] mb-6 line-clamp-3 italic">Modèle de convention de base pour les investissements étrangers dans le secteur minier.</p>
+<div class="flex items-center justify-between border-t border-[#f4f0e7] dark:border-[#3d382d] pt-4 mt-auto">
+<span class="text-xs font-medium opacity-60">01 Janvier 2023</span>
+<button class="text-primary font-bold text-sm flex items-center gap-1 hover:underline">
+                                Voir <span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Pagination -->
+<div class="flex justify-center py-10">
+<nav class="flex items-center gap-2">
+<button class="size-10 flex items-center justify-center rounded-lg border border-[#f4f0e7] dark:border-[#3d382d] hover:bg-primary/10">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="size-10 flex items-center justify-center rounded-lg bg-primary text-[#1c180d] font-bold">1</button>
+<button class="size-10 flex items-center justify-center rounded-lg border border-[#f4f0e7] dark:border-[#3d382d] hover:bg-primary/10">2</button>
+<button class="size-10 flex items-center justify-center rounded-lg border border-[#f4f0e7] dark:border-[#3d382d] hover:bg-primary/10">3</button>
+<span class="mx-2">...</span>
+<button class="size-10 flex items-center justify-center rounded-lg border border-[#f4f0e7] dark:border-[#3d382d] hover:bg-primary/10">12</button>
+<button class="size-10 flex items-center justify-center rounded-lg border border-[#f4f0e7] dark:border-[#3d382d] hover:bg-primary/10">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</nav>
+</div>
+</section>
+</div>
+</main>
+<footer class="bg-white dark:bg-[#1a170c] border-t border-[#f4f0e7] dark:border-[#3d382d] py-12">
+<div class="max-w-[1280px] mx-auto px-6 flex flex-col md:flex-row justify-between items-start gap-8">
+<div class="max-w-md">
+<div class="flex items-center gap-3 mb-4">
+<div class="size-8 flex items-center justify-center bg-primary rounded text-white">
+<span class="material-symbols-outlined" style="font-size: 18px;">account_balance</span>
+</div>
+<h3 class="font-bold">Ministère des Mines et de la Géologie</h3>
+</div>
+<p class="text-sm text-[#9c8749] leading-relaxed">
+                    Gardien du cadre réglementaire et promoteur du développement durable des ressources minérales de la République du Congo.
+                </p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-12">
+<div>
+<h4 class="font-bold text-sm mb-4 uppercase tracking-wider">Navigation</h4>
+<ul class="space-y-2 text-sm text-[#9c8749]">
+<li><a class="hover:text-primary" href="#">Lois et Règlements</a></li>
+<li><a class="hover:text-primary" href="#">Cartographie</a></li>
+<li><a class="hover:text-primary" href="#">Journal Officiel</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-sm mb-4 uppercase tracking-wider">Aide</h4>
+<ul class="space-y-2 text-sm text-[#9c8749]">
+<li><a class="hover:text-primary" href="#">FAQ</a></li>
+<li><a class="hover:text-primary" href="#">Support Technique</a></li>
+<li><a class="hover:text-primary" href="#">Mentions Légales</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-sm mb-4 uppercase tracking-wider">Social</h4>
+<div class="flex gap-4">
+<a class="size-10 rounded-full bg-[#f4f0e7] dark:bg-[#2c281a] flex items-center justify-center hover:bg-primary hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined" style="font-size: 20px;">share</span>
+</a>
+<a class="size-10 rounded-full bg-[#f4f0e7] dark:bg-[#2c281a] flex items-center justify-center hover:bg-primary hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined" style="font-size: 20px;">mail</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="max-w-[1280px] mx-auto px-6 mt-12 pt-8 border-t border-[#f4f0e7] dark:border-[#3d382d] text-center text-xs text-[#9c8749]">
+            © 2024 Gouvernement de la République du Congo - Ministère des Industries Minières et de la Géologie. Tous droits réservés.
+        </div>
+</footer>
+</body></html>

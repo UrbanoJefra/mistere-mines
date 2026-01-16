@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Missions et Vision - Ministère des Industries Minières</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#14b84b",
+                        "secondary-yellow": "#fadb14",
+                        "accent-red": "#dc2626",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#112116",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        body { font-family: "Public Sans", sans-serif; }
+        .gradient-border {
+            background: linear-gradient(to right, #14b84b 0%, #fadb14 50%, #dc2626 100%);
+        }
+        .flag-accent { height: 6px; background: linear-gradient(90deg, #14b84b 33%, #facc15 33% 66%, #ef4444 66%); }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#0e1b12] dark:text-white transition-colors duration-200">
+<div class="flag-accent w-full"></div>
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[#e7f3eb] dark:border-[#2a3f31] px-6 md:px-20 py-4 bg-white dark:bg-[#0e1b12] sticky top-0 z-50">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3 text-[#0e1b12] dark:text-white">
+<div class="size-8 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-sm md:text-lg font-bold leading-tight uppercase tracking-wide">Industries Minières</h2>
+</div>
+<nav class="hidden lg:flex items-center gap-6">
+<a class="text-sm font-bold text-primary border-b-2 border-primary pb-1" href="code.html">Accueil</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="ministere.html">Le Ministre</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="mission.html">Missions</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="actualite.html">Actualités</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="contacts.html">Contacts</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-primary/10 text-primary p-2 rounded-full lg:hidden">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<div class="hidden md:flex items-center bg-[#e7f3eb] dark:bg-[#1a2e21] rounded-lg px-3 py-1.5">
+<span class="material-symbols-outlined text-primary text-xl">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm w-32 lg:w-48" placeholder="Rechercher..." type="text"/>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 bg-primary text-white rounded-lg font-bold text-xs uppercase tracking-tighter">
+<span class="truncate">République du Congo</span>
+</div>
+</div>
+</header>
+<main class="flex-1 max-w-[1200px] mx-auto w-full px-6 md:px-10 py-8">
+<nav class="flex flex-wrap gap-2 py-4 mb-6 text-sm">
+<a class="text-primary font-medium hover:underline" href="#">Accueil</a>
+<span class="text-[#4e9767] opacity-50">/</span>
+<span class="text-[#4e9767] font-medium">L'Institution</span>
+<span class="text-[#4e9767] opacity-50">/</span>
+<span class="text-[#0e1b12] dark:text-gray-300 font-bold">Missions et Vision</span>
+</nav>
+<section class="bg-white dark:bg-[#0e1b12] rounded-xl shadow-sm border border-[#e7f3eb] dark:border-[#2a3f31] p-6 md:p-10 mb-8 overflow-hidden relative">
+<div class="absolute top-0 left-0 w-full h-1 flex">
+<div class="flex-1 bg-primary"></div>
+<div class="flex-1 bg-secondary-yellow"></div>
+<div class="flex-1 bg-accent-red"></div>
+</div>
+<div class="flex flex-col md:flex-row gap-10 items-center">
+<div class="flex-1 text-center md:text-left">
+<div class="flex flex-col gap-1 mb-4">
+<span class="text-primary font-bold tracking-widest text-xs uppercase">Cadre Institutionnel</span>
+<h1 class="text-3xl md:text-5xl font-bold text-[#0e1b12] dark:text-white tracking-tight leading-tight">Missions et Vision Ministérielles</h1>
+<p class="text-xl font-medium text-gray-600 dark:text-gray-400 mt-4 leading-relaxed">
+                            Bâtir une industrie minière responsable, moteur de la transformation structurelle de l'économie congolaise.
+                        </p>
+</div>
+</div>
+<div class="w-full md:w-1/3">
+<div class="aspect-video md:aspect-square rounded-xl bg-cover bg-center shadow-lg border-2 border-primary/10" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDoK2SaD0PIjliuwJm6Q6-zDQfJ-caGZ_LOOKpPhm5aSa2ysHa1wHVY6lraeswi6rMvgRlsKUGGCk4pd6Y4PMZ6bKN_HKdnkZbaA92MkXTs63y16lioCPQppet1mhFTIV0zhd7-LhlaRCLKGs5hFc2kUbg4dWow1sRze_WhiarWnt2A49PPKJ054OmtFmixU8PJJ9gIgh8x2t974YyLNjunOyL7yxTWid1MozEtUxlo6NQvPkKZmuGKY_Ysa7w9HkLcVql8r21rIiU');"></div>
+</div>
+</div>
+</section>
+<section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+<div class="flex flex-col gap-2 rounded-xl p-6 bg-white dark:bg-[#0e1b12] border-l-4 border-primary shadow-sm">
+<div class="flex items-center gap-3 mb-2">
+<span class="material-symbols-outlined text-primary">gavel</span>
+<p class="text-[#4e9767] dark:text-gray-400 text-sm font-bold uppercase tracking-wider">Régulation</p>
+</div>
+<p class="text-[#0e1b12] dark:text-white text-lg font-bold">Gouvernance Transparente</p>
+<p class="text-gray-500 text-xs font-medium">Application du Code Minier et suivi des conventions.</p>
+</div>
+<div class="flex flex-col gap-2 rounded-xl p-6 bg-white dark:bg-[#0e1b12] border-l-4 border-secondary-yellow shadow-sm">
+<div class="flex items-center gap-3 mb-2">
+<span class="material-symbols-outlined text-secondary-yellow">explore</span>
+<p class="text-[#4e9767] dark:text-gray-400 text-sm font-bold uppercase tracking-wider">Géologie</p>
+</div>
+<p class="text-[#0e1b12] dark:text-white text-lg font-bold">Connaissance du Sous-sol</p>
+<p class="text-gray-500 text-xs font-medium">Cartographie et promotion du potentiel national.</p>
+</div>
+<div class="flex flex-col gap-2 rounded-xl p-6 bg-white dark:bg-[#0e1b12] border-l-4 border-accent-red shadow-sm">
+<div class="flex items-center gap-3 mb-2">
+<span class="material-symbols-outlined text-accent-red">eco</span>
+<p class="text-[#4e9767] dark:text-gray-400 text-sm font-bold uppercase tracking-wider">Environnement</p>
+</div>
+<p class="text-[#0e1b12] dark:text-white text-lg font-bold">Mines Durables</p>
+<p class="text-gray-500 text-xs font-medium">Préservation des écosystèmes et réhabilitation des sites.</p>
+</div>
+</section>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+<div class="lg:col-span-2 space-y-12">
+<section id="regulation">
+<h2 class="text-2xl font-bold border-b-2 border-primary w-fit pb-2 mb-6 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">policy</span>
+                        Régulation du Secteur Minier
+                    </h2>
+<div class="prose prose-lg dark:prose-invert text-gray-700 dark:text-gray-300 leading-relaxed space-y-4">
+<p>
+                            Le Ministère assure la mise en œuvre de la politique nationale dans le domaine des mines. Cette mission de régulation vise à instaurer un climat d'affaires attractif tout en préservant les intérêts de l'État et des populations locales.
+                        </p>
+<ul class="grid grid-cols-1 md:grid-cols-2 gap-4 list-none p-0">
+<li class="flex gap-3 items-start bg-white dark:bg-[#1a2e21] p-4 rounded-lg border border-gray-100 dark:border-gray-800">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="text-sm">Octroi et suivi des titres miniers via le Cadastre Minier.</span>
+</li>
+<li class="flex gap-3 items-start bg-white dark:bg-[#1a2e21] p-4 rounded-lg border border-gray-100 dark:border-gray-800">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="text-sm">Contrôle technique et financier des activités d'exploitation.</span>
+</li>
+<li class="flex gap-3 items-start bg-white dark:bg-[#1a2e21] p-4 rounded-lg border border-gray-100 dark:border-gray-800">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="text-sm">Promotion de la transformation locale des produits miniers.</span>
+</li>
+<li class="flex gap-3 items-start bg-white dark:bg-[#1a2e21] p-4 rounded-lg border border-gray-100 dark:border-gray-800">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="text-sm">Lutte contre l'exploitation artisanale illégale.</span>
+</li>
+</ul>
+</div>
+</section>
+<section id="geologie">
+<h2 class="text-2xl font-bold border-b-2 border-primary w-fit pb-2 mb-6 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">layers</span>
+                        Promotion de la Géologie Nationale
+                    </h2>
+<div class="prose prose-lg dark:prose-invert text-gray-700 dark:text-gray-300 leading-relaxed space-y-4">
+<p>
+                            La connaissance approfondie de notre sous-sol est le socle de tout développement minier. À travers le Bureau de Recherches Géologiques et Minières, le Ministère s'engage dans une vaste campagne de cartographie.
+                        </p>
+<div class="bg-primary/5 dark:bg-primary/10 border-l-4 border-primary p-6 my-8 rounded-r-lg italic text-lg text-[#0e1b12] dark:text-gray-100 relative">
+<span class="material-symbols-outlined absolute top-2 right-4 text-primary opacity-20 text-5xl">format_quote</span>
+                            « Notre ambition est de disposer d'un inventaire géologique numérique complet, accessible aux investisseurs du monde entier pour valoriser chaque kilomètre carré du territoire. »
+                        </div>
+</div>
+</section>
+<section id="environnement">
+<h2 class="text-2xl font-bold border-b-2 border-primary w-fit pb-2 mb-6 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">nature_people</span>
+                        Surveillance Environnementale et Sociale
+                    </h2>
+<div class="prose prose-lg dark:prose-invert text-gray-700 dark:text-gray-300 leading-relaxed">
+<p>
+                            L'activité minière ne peut se concevoir sans un respect strict des normes environnementales. Le Ministère veille à ce que chaque projet intègre un plan de gestion environnementale et sociale (PGES) rigoureux, garantissant la protection de la biodiversité congolaise et le développement des communautés riveraines.
+                        </p>
+</div>
+</section>
+</div>
+<div class="lg:col-span-1">
+<div class="bg-white dark:bg-[#0e1b12] rounded-xl p-6 border border-[#e7f3eb] dark:border-[#2a3f31] shadow-sm sticky top-24">
+<h3 class="text-xl font-bold mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">navigation</span>
+                        Sommaire
+                    </h3>
+<ul class="space-y-4">
+<li>
+<a class="flex items-center gap-3 p-3 rounded-lg hover:bg-primary/5 text-sm font-bold transition-all group border border-transparent hover:border-primary/20" href="#regulation">
+<span class="size-8 rounded bg-primary/10 text-primary flex items-center justify-center font-bold">01</span>
+<span>Régulation du Secteur</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 p-3 rounded-lg hover:bg-secondary-yellow/5 text-sm font-bold transition-all group border border-transparent hover:border-secondary-yellow/20" href="#geologie">
+<span class="size-8 rounded bg-secondary-yellow/10 text-secondary-yellow flex items-center justify-center font-bold">02</span>
+<span>Recherche Géologique</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 p-3 rounded-lg hover:bg-accent-red/5 text-sm font-bold transition-all group border border-transparent hover:border-accent-red/20" href="#environnement">
+<span class="size-8 rounded bg-accent-red/10 text-accent-red flex items-center justify-center font-bold">03</span>
+<span>Responsabilité Sociétale</span>
+</a>
+</li>
+</ul>
+<div class="mt-10 pt-6 border-t border-gray-100 dark:border-[#2a3f31]">
+<h4 class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">Valeurs Institutionnelles</h4>
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-lg">visibility</span>
+<span class="text-xs font-medium">Transparence</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-yellow text-lg">verified</span>
+<span class="text-xs font-medium">Rigueur &amp; Éthique</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-accent-red text-lg">groups</span>
+<span class="text-xs font-medium">Inclusion Sociale</span>
+</div>
+</div>
+</div>
+<div class="mt-10 pt-6 border-t border-gray-100 dark:border-[#2a3f31]">
+<div class="flex items-center gap-4 opacity-70">
+<div class="bg-center bg-contain bg-no-repeat size-12" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBsoHnMEbFMUTEVZUwWl4OaeDUk6gNyh1qrjBdYdSEAd8NGh4MV7IwE_MpQx0P5Pyb7FIX_jiTdYB5v5skgIM_pPMhLF2O01-n7h_BikIFJiyt7sP59SF2vptdwPKl_WslVJxmCppPLBMvKonevzacMEXn1CnNQlTvMOiTG3986fDGX7WG1OH7lpix-0cFb1hJ6DwYHm7NBnXVvpYTYUesd2h1qc2qTp6Lp-HHBXxT71O9aAQSK_d7HKNB5jRWZK4U661GCQ4Gq16o');"></div>
+<div class="text-[10px] font-bold uppercase tracking-widest leading-tight">
+                                République du Congo<br/>Unité • Travail • Progrès
+                            </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section class="mt-16 pb-12">
+<h2 class="text-2xl font-bold border-b-2 border-primary w-fit pb-2 mb-8 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">imagesmode</span>
+                Activité Minière &amp; Terrain
+            </h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="aspect-square bg-gray-200 dark:bg-[#1a2e21] rounded-lg bg-cover bg-center hover:opacity-90 cursor-pointer transition-all border border-transparent hover:border-primary/50 overflow-hidden" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCac4lOhjFjCbBEAloPqbFhHom-LlX-Fr19ceglVDsYoah9wWv9QlkNNUP1dBxBU_Edn13A7POvrRB3IiNhKKOucfK_yMYiZTKZSw9LUM-rtuN4sYipfaUCnPESejECovE1iny6RGY7QE5bNIRu8XEPqPcRqNSiv9JPBfpeXHz7Hb-zmrGx5syd2rAnBHn4t7BI76dfbyTw4jyBs9JwdTbrUgDIaSszfb_8RVVu9UN9z9iw1EjCEHRPyZrw42hsxFn7Bu5aCE-Ue9Y');">
+<div class="w-full h-full bg-black/20 flex items-end p-3 opacity-0 hover:opacity-100 transition-opacity">
+<span class="text-white text-[10px] font-bold uppercase">Exploitation Industrielle</span>
+</div>
+</div>
+<div class="aspect-square bg-gray-200 dark:bg-[#1a2e21] rounded-lg bg-cover bg-center hover:opacity-90 cursor-pointer transition-all border border-transparent hover:border-primary/50 overflow-hidden" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCqte-Sx5UynaK10mzIOCrz5J3cHT4HFSqZIqxwFA5OHH6toodb-jp4bQzcmkc5ouM7d5CnUSOn8WEsmMYmdg4wRP6D_gmNSMXT4uGZ2p0ZUmGi3FbdAW_fa2bUpnfUI90BtipystKqPaalLTeER6Cn0x3yVJoHuTYE8FGiPWc1_6YqSQZ2p1DLxzJKr0DU530Ev1s0p5CDM33eiBe7CLeNV_963fkimNa3qvqpcGtkKuSj2Fil1OccI9_Szqslj0ncXbqBhm68uwE');">
+<div class="w-full h-full bg-black/20 flex items-end p-3 opacity-0 hover:opacity-100 transition-opacity">
+<span class="text-white text-[10px] font-bold uppercase">Projets Stratégiques</span>
+</div>
+</div>
+<div class="aspect-square bg-gray-200 dark:bg-[#1a2e21] rounded-lg bg-cover bg-center hover:opacity-90 cursor-pointer transition-all border border-transparent hover:border-primary/50 overflow-hidden" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBAA4kbY6oEiN2VtAVlyre_JOs1Kn5TCHOCYPERZZaWMsrwz3BT2yrKA3dIwTWQnvdHA5RuTUt7n1KVMJjuBoQVhZdgW34Or8kLFiFGNqHI-ADwohHt8KHC-kEDhLL172fLP6NxKOHOeSMfLWWq9MCZrPO6Al87F4RR_wni9jwGTcjsoZE5DYSN9p-ZTPzhVXCe4VQyK4YS0CBbkwQ0IcjPcVQ3BDHvZRNVPW8tARX1-5Y2eo_e29MdPfKuuKTcnmOAEjdrLmj_ozU');">
+<div class="w-full h-full bg-black/20 flex items-end p-3 opacity-0 hover:opacity-100 transition-opacity">
+<span class="text-white text-[10px] font-bold uppercase">Coopération Internationale</span>
+</div>
+</div>
+<div class="aspect-square bg-gray-200 dark:bg-[#1a2e21] rounded-lg bg-cover bg-center hover:opacity-90 cursor-pointer transition-all border border-transparent hover:border-primary/50 overflow-hidden" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBKj8eydtv9lk6My31xOj1Fo3k4FzQaghFYLtQa3q3vKIKTVimUokXSwLuiZfiTyEdKEsyfSLntZwonzvrdGO9mq0xDVetxZaK2wpLq1ml1WOO7n4FyIOVfwql_KaALCeNZzTEW0qV2FkiVj7Pj6LNi9QWOZki2fcahayr-Kni48OTALBXyGu--4f1pOTyrR-nqJHuih6Q8lTa5FFzIkFkBx5KxppXEEjTXgTsuAuVAMW-jZOoBh1p5DIPkqNQ9Rd5jHOm8VFGKdcM');">
+<div class="w-full h-full bg-black/20 flex items-end p-3 opacity-0 hover:opacity-100 transition-opacity">
+<span class="text-white text-[10px] font-bold uppercase">Dialogue Social</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-white dark:bg-[#0e1b12] border-t border-[#e7f3eb] dark:border-[#2a3f31] py-12">
+<div class="max-w-[1200px] mx-auto px-10 grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined">diamond</span>
+<h3 class="font-bold uppercase tracking-widest">Mines &amp; Géologie</h3>
+</div>
+<p class="text-gray-500 dark:text-gray-400">
+                    Portail officiel du Ministère des Industries Minières de la République du Congo.
+                </p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-[#0e1b12] dark:text-white">Liens Utiles</h4>
+<ul class="flex flex-col gap-2 text-gray-500 dark:text-gray-400">
+<li><a class="hover:text-primary transition-colors" href="#">Cadastre Minier</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Journal Officiel</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Investir au Congo</a></li>
+</ul>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-[#0e1b12] dark:text-white">Contact</h4>
+<div class="flex flex-col gap-2 text-gray-500 dark:text-gray-400">
+<p class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">location_on</span>
+                        Brazzaville, Boulevard Denis Sassou Nguesso
+                    </p>
+<p class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">mail</span>
+                        contact@mines.gouv.cg
+                    </p>
+</div>
+</div>
+</div>
+<div class="max-w-[1200px] mx-auto px-10 mt-12 pt-6 border-t border-gray-100 dark:border-[#2a3f31] flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-400 uppercase tracking-widest font-bold">
+<p>© 2024 République du Congo - Tous droits réservés</p>
+<div class="flex gap-4">
+<a class="hover:text-primary transition-colors" href="#">Mentions Légales</a>
+<a class="hover:text-primary transition-colors" href="#">Plan du site</a>
+</div>
+</div>
+</footer>
+</div>
+
+</body></html>

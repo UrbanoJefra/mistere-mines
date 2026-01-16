@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Profil du Ministre Pierre Oba - Ministère des Industries Minières</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#14b84b",
+                        "secondary-yellow": "#fadb14",
+                        "accent-red": "#dc2626",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#112116",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: "Public Sans", sans-serif; }
+        .timeline-line {
+            background: linear-gradient(to bottom, #14b84b 0%, #fadb14 50%, #dc2626 100%);
+        }
+        .flag-accent { height: 6px; background: linear-gradient(90deg, #14b84b 33%, #facc15 33% 66%, #ef4444 66%); }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#0e1b12] dark:text-white transition-colors duration-200">
+<div class="flag-accent w-full"></div>
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[#e7f3eb] dark:border-[#2a3f31] px-6 md:px-20 py-4 bg-white dark:bg-[#0e1b12] sticky top-0 z-50">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3 text-[#0e1b12] dark:text-white">
+<div class="size-8 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-sm md:text-lg font-bold leading-tight uppercase tracking-wide">Industries Minières</h2>
+</div>
+<nav class="hidden lg:flex items-center gap-6">
+<a class="text-sm font-bold text-primary border-b-2 border-primary pb-1" href="code.html">Accueil</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="ministere.html">Le Ministre</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="mission.html">Missions</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="actualite.html">Actualités</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="contacts.html">Contacts</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-primary/10 text-primary p-2 rounded-full lg:hidden">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<div class="hidden md:flex items-center bg-[#e7f3eb] dark:bg-[#1a2e21] rounded-lg px-3 py-1.5">
+<span class="material-symbols-outlined text-primary text-xl">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm w-32 lg:w-48" placeholder="Rechercher..." type="text"/>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 bg-primary text-white rounded-lg font-bold text-xs uppercase tracking-tighter">
+<span class="truncate">République du Congo</span>
+</div>
+</div>
+</header>
+<main class="flex-1 max-w-[1200px] mx-auto w-full px-6 md:px-10 py-8">
+<!-- Breadcrumbs -->
+<nav class="flex flex-wrap gap-2 py-4 mb-6 text-sm">
+<a class="text-primary font-medium hover:underline" href="#">Accueil</a>
+<span class="text-[#4e9767] opacity-50">/</span>
+<span class="text-[#4e9767] font-medium">L'Institution</span>
+<span class="text-[#4e9767] opacity-50">/</span>
+<span class="text-[#0e1b12] dark:text-gray-300 font-bold">Le Ministre Pierre Oba</span>
+</nav>
+<!-- Profile Header Section -->
+<section class="bg-white dark:bg-[#0e1b12] rounded-xl shadow-sm border border-[#e7f3eb] dark:border-[#2a3f31] p-6 md:p-10 mb-8 overflow-hidden relative">
+<div class="absolute top-0 left-0 w-full h-1 flex">
+<div class="flex-1 bg-primary"></div>
+<div class="flex-1 bg-secondary-yellow"></div>
+<div class="flex-1 bg-accent-red"></div>
+</div>
+<div class="flex flex-col md:flex-row gap-8 items-center md:items-start">
+<div class="relative">
+<div class="size-48 md:size-64 rounded-xl border-4 border-primary/20 bg-center bg-cover bg-no-repeat shadow-xl" data-alt="Portrait officiel du Ministre Pierre Oba en tenue de Général de division" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCac4lOhjFjCbBEAloPqbFhHom-LlX-Fr19ceglVDsYoah9wWv9QlkNNUP1dBxBU_Edn13A7POvrRB3IiNhKKOucfK_yMYiZTKZSw9LUM-rtuN4sYipfaUCnPESejECovE1iny6RGY7QE5bNIRu8XEPqPcRqNSiv9JPBfpeXHz7Hb-zmrGx5syd2rAnBHn4t7BI76dfbyTw4jyBs9JwdTbrUgDIaSszfb_8RVVu9UN9z9iw1EjCEHRPyZrw42hsxFn7Bu5aCE-Ue9Y");'></div>
+<div class="absolute -bottom-4 -right-4 bg-white dark:bg-[#1a2e21] p-3 rounded-lg shadow-lg border border-primary/20">
+<span class="material-symbols-outlined text-primary text-3xl">military_tech</span>
+</div>
+</div>
+<div class="flex-1 text-center md:text-left">
+<div class="flex flex-col gap-1 mb-4">
+<span class="text-primary font-bold tracking-widest text-xs uppercase">Cabinet Ministériel</span>
+<h1 class="text-3xl md:text-5xl font-bold text-[#0e1b12] dark:text-white tracking-tight">Pierre Oba</h1>
+<p class="text-xl font-medium text-primary mt-2">Ministre d'État, Ministre des Industries Minières et de la Géologie</p>
+<p class="text-[#4e9767] dark:text-gray-400 font-medium flex items-center justify-center md:justify-start gap-2 mt-1">
+<span class="material-symbols-outlined text-sm">stars</span>
+                            Général de division • Chevalier du Mérite Congolais
+                        </p>
+</div>
+<div class="flex flex-wrap gap-4 mt-6 justify-center md:justify-start">
+<button class="bg-primary hover:bg-primary/90 text-white font-bold py-3 px-8 rounded-lg transition-all flex items-center gap-2 shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined">mail</span>
+                            Contacter le Cabinet
+                        </button>
+<button class="bg-background-light dark:bg-[#1a2e21] hover:bg-gray-100 dark:hover:bg-[#253d2d] text-[#0e1b12] dark:text-white font-bold py-3 px-8 rounded-lg transition-all border border-primary/20">
+                            Discours &amp; Interventions
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Key Stats Section -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+<div class="flex flex-col gap-2 rounded-xl p-6 bg-white dark:bg-[#0e1b12] border-l-4 border-primary shadow-sm">
+<p class="text-[#4e9767] dark:text-gray-400 text-sm font-bold uppercase tracking-wider">Expérience Gouvernementale</p>
+<div class="flex items-end gap-2">
+<p class="text-[#0e1b12] dark:text-white text-3xl font-bold">25+ Ans</p>
+<p class="text-primary text-xs pb-1 font-medium">Service continu</p>
+</div>
+</div>
+<div class="flex flex-col gap-2 rounded-xl p-6 bg-white dark:bg-[#0e1b12] border-l-4 border-secondary-yellow shadow-sm">
+<p class="text-[#4e9767] dark:text-gray-400 text-sm font-bold uppercase tracking-wider">Domaine Stratégique</p>
+<div class="flex items-end gap-2">
+<p class="text-[#0e1b12] dark:text-white text-3xl font-bold">Mines &amp; Géo</p>
+<p class="text-secondary-yellow text-xs pb-1 font-medium">Expertise</p>
+</div>
+</div>
+<div class="flex flex-col gap-2 rounded-xl p-6 bg-white dark:bg-[#0e1b12] border-l-4 border-accent-red shadow-sm">
+<p class="text-[#4e9767] dark:text-gray-400 text-sm font-bold uppercase tracking-wider">Haut Commandement</p>
+<div class="flex items-end gap-2">
+<p class="text-[#0e1b12] dark:text-white text-3xl font-bold">Général</p>
+<p class="text-accent-red text-xs pb-1 font-medium">de division</p>
+</div>
+</div>
+</section>
+<!-- Content Split: Bio & Timeline -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+<!-- Biography Content -->
+<div class="lg:col-span-2 flex flex-col gap-8">
+<section>
+<h2 class="text-2xl font-bold border-b-2 border-primary w-fit pb-2 mb-6 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">history_edu</span>
+                        Biographie et Vision
+                    </h2>
+<div class="prose prose-lg dark:prose-invert text-gray-700 dark:text-gray-300 leading-relaxed space-y-4">
+<p>
+                            Figure emblématique de la stabilité institutionnelle en République du Congo, le <strong>Ministre d'État Pierre Oba</strong> incarne une transition réussie entre le haut commandement militaire et la direction stratégique des ressources naturelles du pays. 
+                        </p>
+<p>
+                            Nommé Général de division, son parcours est indissociable des efforts de pacification et de reconstruction nationale entamés dès 1997. Sa vision repose sur un principe fondamental : <em>"La richesse minière doit être le levier d'une paix durable et d'un développement industriel autonome."</em>
+</p>
+<div class="bg-primary/5 dark:bg-primary/10 border-l-4 border-primary p-6 my-8 rounded-r-lg italic text-lg text-[#0e1b12] dark:text-gray-100 relative">
+<span class="material-symbols-outlined absolute top-2 right-4 text-primary opacity-20 text-5xl">format_quote</span>
+                            « Notre mission est de transformer le potentiel géologique du Congo en opportunités concrètes pour chaque citoyen, tout en garantissant la sécurité stratégique de nos exploitations. »
+                        </div>
+<p>
+                            Depuis sa nomination à la tête du Ministère des Mines en 2005, il a piloté d'importantes réformes du Code Minier, favorisant l'investissement étranger tout en renforçant les exigences de transformation locale et de respect environnemental.
+                        </p>
+</div>
+</section>
+<section>
+<h2 class="text-2xl font-bold border-b-2 border-primary w-fit pb-2 mb-6 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">emoji_events</span>
+                        Distinctions et Succès pour la Paix
+                    </h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="p-4 rounded-lg bg-white dark:bg-[#0e1b12] border border-[#d0e7d7] dark:border-[#2a3f31] flex items-start gap-4">
+<div class="bg-primary/10 p-2 rounded-full">
+<span class="material-symbols-outlined text-primary">verified_user</span>
+</div>
+<div>
+<h4 class="font-bold text-sm">Pacification Nationale</h4>
+<p class="text-xs text-gray-600 dark:text-gray-400">Acteur clé du retour à la paix civile entre 1997 et 2002.</p>
+</div>
+</div>
+<div class="p-4 rounded-lg bg-white dark:bg-[#0e1b12] border border-[#d0e7d7] dark:border-[#2a3f31] flex items-start gap-4">
+<div class="bg-primary/10 p-2 rounded-full">
+<span class="material-symbols-outlined text-primary">precision_manufacturing</span>
+</div>
+<div>
+<h4 class="font-bold text-sm">Développement Industriel</h4>
+<p class="text-xs text-gray-600 dark:text-gray-400">Lancement de grands projets structurants (Fer, Potasse).</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Vertical Timeline -->
+<div class="lg:col-span-1">
+<div class="bg-white dark:bg-[#0e1b12] rounded-xl p-6 border border-[#e7f3eb] dark:border-[#2a3f31] shadow-sm sticky top-24">
+<h3 class="text-xl font-bold mb-8 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">route</span>
+                        Parcours Officiel
+                    </h3>
+<div class="relative space-y-8">
+<!-- Timeline Line -->
+<div class="absolute left-3 top-2 bottom-2 w-0.5 timeline-line opacity-30"></div>
+<!-- Milestone 1 -->
+<div class="relative pl-10">
+<div class="absolute left-0 top-1.5 size-6 rounded-full bg-primary flex items-center justify-center text-white ring-4 ring-primary/20">
+<span class="material-symbols-outlined text-[14px]">shield</span>
+</div>
+<div class="flex flex-col">
+<span class="text-xs font-bold text-primary uppercase">1997 — 2002</span>
+<h4 class="font-bold text-[#0e1b12] dark:text-white leading-tight">Sécurité &amp; Police Nationale</h4>
+<p class="text-xs text-gray-500 mt-1">Responsable de la sécurité présidentielle et restructuration de la force publique.</p>
+</div>
+</div>
+<!-- Milestone 2 -->
+<div class="relative pl-10">
+<div class="absolute left-0 top-1.5 size-6 rounded-full bg-secondary-yellow flex items-center justify-center text-white ring-4 ring-secondary-yellow/20">
+<span class="material-symbols-outlined text-[14px]">account_balance</span>
+</div>
+<div class="flex flex-col">
+<span class="text-xs font-bold text-secondary-yellow uppercase">2002 — 2005</span>
+<h4 class="font-bold text-[#0e1b12] dark:text-white leading-tight">Ministre de l'Intérieur</h4>
+<p class="text-xs text-gray-500 mt-1">Coordination de la sécurité territoriale et de la décentralisation.</p>
+</div>
+</div>
+<!-- Milestone 3 -->
+<div class="relative pl-10">
+<div class="absolute left-0 top-1.5 size-6 rounded-full bg-accent-red flex items-center justify-center text-white ring-4 ring-accent-red/20">
+<span class="material-symbols-outlined text-[14px]">construction</span>
+</div>
+<div class="flex flex-col">
+<span class="text-xs font-bold text-accent-red uppercase">2005 — Présent</span>
+<h4 class="font-bold text-[#0e1b12] dark:text-white leading-tight">Ministre des Mines</h4>
+<p class="text-xs text-gray-500 mt-1">Pilotage de la transition minière et géologique du pays.</p>
+</div>
+</div>
+</div>
+<div class="mt-10 pt-6 border-t border-gray-100 dark:border-[#2a3f31]">
+<div class="flex items-center gap-4 opacity-70">
+<div class="bg-center bg-contain bg-no-repeat size-12" data-alt="Armoiries de la République du Congo" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBsoHnMEbFMUTEVZUwWl4OaeDUk6gNyh1qrjBdYdSEAd8NGh4MV7IwE_MpQx0P5Pyb7FIX_jiTdYB5v5skgIM_pPMhLF2O01-n7h_BikIFJiyt7sP59SF2vptdwPKl_WslVJxmCppPLBMvKonevzacMEXn1CnNQlTvMOiTG3986fDGX7WG1OH7lpix-0cFb1hJ6DwYHm7NBnXVvpYTYUesd2h1qc2qTp6Lp-HHBXxT71O9aAQSK_d7HKNB5jRWZK4U661GCQ4Gq16o");'></div>
+<div class="text-[10px] font-bold uppercase tracking-widest">
+                                Unité • Travail • Progrès
+                            </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Media/Photos Section -->
+<section class="mt-16 pb-12">
+<h2 class="text-2xl font-bold border-b-2 border-primary w-fit pb-2 mb-8 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">photo_library</span>
+                En Mission
+            </h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="aspect-square bg-gray-200 dark:bg-[#1a2e21] rounded-lg bg-cover bg-center hover:opacity-90 cursor-pointer transition-opacity" data-alt="Visite terrain d'un site minier par le Ministre" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDoK2SaD0PIjliuwJm6Q6-zDQfJ-caGZ_LOOKpPhm5aSa2ysHa1wHVY6lraeswi6rMvgRlsKUGGCk4pd6Y4PMZ6bKN_HKdnkZbaA92MkXTs63y16lioCPQppet1mhFTIV0zhd7-LhlaRCLKGs5hFc2kUbg4dWow1sRze_WhiarWnt2A49PPKJ054OmtFmixU8PJJ9gIgh8x2t974YyLNjunOyL7yxTWid1MozEtUxlo6NQvPkKZmuGKY_Ysa7w9HkLcVql8r21rIiU");'></div>
+<div class="aspect-square bg-gray-200 dark:bg-[#1a2e21] rounded-lg bg-cover bg-center hover:opacity-90 cursor-pointer transition-opacity" data-alt="Cérémonie officielle de décoration militaire" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCqte-Sx5UynaK10mzIOCrz5J3cHT4HFSqZIqxwFA5OHH6toodb-jp4bQzcmkc5ouM7d5CnUSOn8WEsmMYmdg4wRP6D_gmNSMXT4uGZ2p0ZUmGi3FbdAW_fa2bUpnfUI90BtipystKqPaalLTeER6Cn0x3yVJoHuTYE8FGiPWc1_6YqSQZ2p1DLxzJKr0DU530Ev1s0p5CDM33eiBe7CLeNV_963fkimNa3qvqpcGtkKuSj2Fil1OccI9_Szqslj0ncXbqBhm68uwE");'></div>
+<div class="aspect-square bg-gray-200 dark:bg-[#1a2e21] rounded-lg bg-cover bg-center hover:opacity-90 cursor-pointer transition-opacity" data-alt="Conférence internationale sur les mines" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBAA4kbY6oEiN2VtAVlyre_JOs1Kn5TCHOCYPERZZaWMsrwz3BT2yrKA3dIwTWQnvdHA5RuTUt7n1KVMJjuBoQVhZdgW34Or8kLFiFGNqHI-ADwohHt8KHC-kEDhLL172fLP6NxKOHOeSMfLWWq9MCZrPO6Al87F4RR_wni9jwGTcjsoZE5DYSN9p-ZTPzhVXCe4VQyK4YS0CBbkwQ0IcjPcVQ3BDHvZRNVPW8tARX1-5Y2eo_e29MdPfKuuKTcnmOAEjdrLmj_ozU");'></div>
+<div class="aspect-square bg-gray-200 dark:bg-[#1a2e21] rounded-lg bg-cover bg-center hover:opacity-90 cursor-pointer transition-opacity" data-alt="Réunion bilatérale au cabinet ministériel" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBKj8eydtv9lk6My31xOj1Fo3k4FzQaghFYLtQa3q3vKIKTVimUokXSwLuiZfiTyEdKEsyfSLntZwonzvrdGO9mq0xDVetxZaK2wpLq1ml1WOO7n4FyIOVfwql_KaALCeNZzTEW0qV2FkiVj7Pj6LNi9QWOZki2fcahayr-Kni48OTALBXyGu--4f1pOTyrR-nqJHuih6Q8lTa5FFzIkFkBx5KxppXEEjTXgTsuAuVAMW-jZOoBh1p5DIPkqNQ9Rd5jHOm8VFGKdcM");'></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-white dark:bg-[#0e1b12] border-t border-[#e7f3eb] dark:border-[#2a3f31] py-12">
+<div class="max-w-[1200px] mx-auto px-10 grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined">diamond</span>
+<h3 class="font-bold uppercase tracking-widest">Mines &amp; Géologie</h3>
+</div>
+<p class="text-gray-500 dark:text-gray-400">
+                    Portail officiel du Ministère des Industries Minières de la République du Congo.
+                </p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-[#0e1b12] dark:text-white">Liens Utiles</h4>
+<ul class="flex flex-col gap-2 text-gray-500 dark:text-gray-400">
+<li><a class="hover:text-primary" href="#">Cadastre Minier</a></li>
+<li><a class="hover:text-primary" href="#">Journal Officiel</a></li>
+<li><a class="hover:text-primary" href="#">Investir au Congo</a></li>
+</ul>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-[#0e1b12] dark:text-white">Contact</h4>
+<div class="flex flex-col gap-2 text-gray-500 dark:text-gray-400">
+<p class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">location_on</span>
+                        Brazzaville, Boulevard Denis Sassou Nguesso
+                    </p>
+<p class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">mail</span>
+                        contact@mines.gouv.cg
+                    </p>
+</div>
+</div>
+</div>
+<div class="max-w-[1200px] mx-auto px-10 mt-12 pt-6 border-t border-gray-100 dark:border-[#2a3f31] flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-400 uppercase tracking-widest font-bold">
+<p>© 2024 République du Congo - Tous droits réservés</p>
+<div class="flex gap-4">
+<a class="hover:text-primary" href="#">Mentions Légales</a>
+<a class="hover:text-primary" href="#">Plan du site</a>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

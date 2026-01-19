@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html class="light" lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Organigramme - Ministère des Industries Minières et de la Géologie</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script>
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        primary: "#14b84b",
+        "secondary-yellow": "#fadb14",
+        "accent-red": "#dc2626",
+        "background-light": "#f6f8f6",
+        "background-dark": "#0e1b12",
+        "congo-yellow": "#facc15",
+        "congo-red": "#ef4444"
+      },
+      fontFamily: { display: ["Public Sans", "sans-serif"] },
+      borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" }
+    }
+  }
+}
+</script>
+<style type="text/tailwindcss">
+body { font-family: "Public Sans", sans-serif; }
+.hero-gradient {
+  background: linear-gradient(to right, rgba(14,27,18,0.8), rgba(14,27,18,0.2));
+}
+.flag-accent {
+  height: 6px;
+  background: linear-gradient(90deg, #14b84b 33%, #facc15 33% 66%, #ef4444 66%);
+}
+</style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#0e1b12] dark:text-white transition-colors duration-200">
+
+<div class="flag-accent w-full"></div>
+
+<!-- ================= HEADER ================= -->
+<header class="sticky top-0 z-50 backdrop-blur-md bg-white/90 dark:bg-[#0e1b12]/90 border-b border-[#e7f3eb] dark:border-[#2a3f31]">
+  <div class="max-w-[1400px] mx-auto px-6 md:px-20 py-4 flex items-center justify-between">
+    <!-- LOGO -->
+    <div class="flex items-center gap-5">
+      <img src="images/mines.jpeg" alt="Logo Ministère des Industries Minières" class="h-14 md:h-16 object-contain"/>
+      <div class="leading-tight">
+        <h2 class="text-sm md:text-lg font-bold uppercase tracking-wide">Industries Minières</h2>
+        <span class="text-[10px] uppercase tracking-widest text-gray-500 dark:text-gray-400">République du Congo</span>
+      </div>
+    </div>
+    <!-- NAV -->
+    <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold">
+      <a class="text-primary border-b-2 border-primary pb-1" href="index.html">Accueil</a>
+      <a class="hover:text-primary transition-colors" href="ministere.html">Le Ministre</a>
+      <a class="hover:text-primary transition-colors" href="mission.html">Missions</a>
+      <a class="hover:text-primary transition-colors" href="actualite.html">Actualités</a>
+      <a class="hover:text-primary transition-colors" href="contacts.html">Contacts</a>
+    </nav>
+    <!-- ACTIONS -->
+    <div class="flex items-center gap-4">
+      <button id="mobileMenuBtn" class="lg:hidden p-2 rounded-full bg-primary/10 text-primary">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+      <div class="hidden sm:flex items-center px-4 py-2 rounded-xl bg-primary text-white text-xs font-bold uppercase tracking-widest shadow">
+        République du Congo
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="max-w-7xl mx-auto px-4 py-8">
+<!-- Breadcrumbs -->
+<div class="flex flex-wrap gap-2 items-center mb-6 text-sm">
+  <a class="text-primary font-medium hover:underline" href="#">Accueil</a>
+  <span class="material-symbols-outlined text-xs text-primary/50">chevron_right</span>
+  <span class="text-[#0e1b12] dark:text-white/70">Institution</span>
+  <span class="material-symbols-outlined text-xs text-primary/50">chevron_right</span>
+  <span class="text-[#0e1b12] dark:text-white font-bold">Organigramme et Équipe</span>
+</div>
+
+<!-- Headline -->
+<div class="text-center mb-12">
+  <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-4">Organigramme du Ministère</h1>
+  <div class="flex justify-center gap-1 mb-6">
+    <div class="h-1.5 w-12 bg-primary rounded-full"></div>
+    <div class="h-1.5 w-12 bg-congo-yellow rounded-full"></div>
+    <div class="h-1.5 w-12 bg-congo-red rounded-full"></div>
+  </div>
+  <p class="max-w-2xl mx-auto text-primary/80 dark:text-primary/60 text-lg">
+    Découvrez la structure institutionnelle et les responsables qui œuvrent pour le développement du secteur minier congolais.
+  </p>
+</div>
+
+<!-- =================== MINISTRE =================== -->
+<section class="mb-20">
+  <div class="hero-gradient rounded-3xl border border-primary/10 p-8 md:p-12 relative overflow-hidden shadow-sm">
+    <div class="relative z-10 flex flex-col items-center">
+      <div class="relative mb-6">
+        <div class="absolute -inset-1 rounded-2xl bg-gradient-to-tr from-primary via-congo-yellow to-congo-red blur opacity-30"></div>
+        <div class="relative bg-white dark:bg-background-dark p-1 rounded-2xl">
+          <div class="bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl w-48 h-64 shadow-xl" style='background-image: url("https://i0.wp.com/gouvernement.cg/wp-content/uploads/2022/07/3.png?resize=479%2C600&ssl=1");'></div>
+        </div>
+      </div>
+      <div class="text-center max-w-xl">
+        <h2 class="text-[#0e1b12] dark:text-white text-3xl font-bold mb-2">S.E.M. Pierre Oba</h2>
+        <p class="text-primary text-xl font-semibold mb-1 uppercase tracking-tight">Ministre d'État</p>
+        <p class="text-[#0e1b12]/60 dark:text-white/60 text-lg italic mb-6">Ministre des Industries Minières et de la Géologie</p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <button class="flex items-center gap-2 px-8 py-3 bg-primary text-white rounded-lg font-bold hover:shadow-lg transition-all active:scale-95">
+            <span class="material-symbols-outlined">person</span>
+            Consulter la biographie
+          </button>
+          <button class="flex items-center gap-2 px-8 py-3 bg-white dark:bg-white/5 border border-primary/20 text-[#0e1b12] dark:text-white rounded-lg font-bold hover:bg-primary/5 transition-all">
+            <span class="material-symbols-outlined">mail</span>
+            Contacter le cabinet
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== CABINET =================== -->
+<section class="mb-20">
+  <div class="flex items-center gap-4 mb-10 px-4">
+    <h2 class="text-2xl font-bold text-[#0e1b12] dark:text-white whitespace-nowrap">Le Cabinet du Ministre</h2>
+    <div class="h-[1px] w-full bg-gradient-to-r from-primary/30 to-transparent"></div>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Example Cabinet Member -->
+    <div class="bg-white dark:bg-white/5 rounded-2xl p-6 border border-[#e7f3eb] dark:border-white/10 hover:shadow-xl transition-shadow group relative overflow-hidden">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary"></div>
+      <div class="flex gap-4">
+        <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-20 shadow-md group-hover:scale-105 transition-transform" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBx8ETFr-ssOaUbVlEo6s583FTYxaRPs2UlWkmrD_LNZP0wVjZflIfPv6YDTyKakqEVGIDo5fD0AYxhc_NWPJTKKxKf6Xq-DH-QbzsUTIcD9YqW8fPjVNTRg_aNPU45sSUBseFPCJS7i9NRqmLZzmkW6owwIFY71937lpt9tkgoEJknK5MCwjvPCrxNkuZcCTNZM9xaAyab34fK7i-4dkS9YCmVpndHEeVdrLq0jHym8Nhrw0qQCB_KoAGCD8G21vxQmW2DWVTUDoA");'></div>
+        <div class="flex-1">
+          <h3 class="text-[#0e1b12] dark:text-white font-bold text-lg mb-1">M. Macaire Mani</h3>
+          <p class="text-primary text-sm font-semibold uppercase tracking-wide mb-3">Directeur de Cabinet</p>
+          <button class="text-[#0e1b12]/60 dark:text-white/60 text-xs font-bold flex items-center gap-1 hover:text-primary transition-colors">
+            VOIR BIO <span class="material-symbols-outlined text-[14px]">arrow_forward_ios</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Add other members similarly -->
+  </div>
+
+  <!-- Button Voir Tous -->
+  <div class="flex justify-center mt-12">
+    <a href="bureau.html" class="bg-primary text-white font-bold px-10 py-4 rounded-xl shadow-lg hover:bg-primary/90 transition-all flex items-center gap-3">
+      Voir tous les membres du bureau
+      <span class="material-icons">arrow_forward</span>
+    </a>
+  </div>
+</section>
+
+<!-- =================== Footer =================== -->
+<footer class="bg-white dark:bg-background-dark border-t border-[#e7f3eb] dark:border-white/10 py-12 mt-20">
+<div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-12">
+  <div class="col-span-1">
+    <div class="flex items-center gap-3 mb-6 text-primary">
+      <span class="material-symbols-outlined text-3xl">account_balance</span>
+      <span class="font-bold uppercase tracking-tighter">Ministère des Mines</span>
+    </div>
+    <p class="text-sm text-[#0e1b12]/60 dark:text-white/60 leading-relaxed">
+      Plateforme officielle d'information du Ministère des Industries Minières et de la Géologie de la République du Congo.
+    </p>
+  </div>
+  <div>
+    <h5 class="font-bold mb-6 text-sm uppercase tracking-widest text-primary">Navigation</h5>
+    <ul class="space-y-4 text-sm font-medium">
+      <li><a class="hover:text-primary transition-colors" href="#">Le Ministère</a></li>
+      <li><a class="hover:text-primary transition-colors" href="#">Services en ligne</a></li>
+      <li><a class="hover:text-primary transition-colors" href="#">Appels d'offres</a></li>
+      <li><a class="hover:text-primary transition-colors" href="#">Statistiques</a></li>
+    </ul>
+  </div>
+  <div>
+    <h5 class="font-bold mb-6 text-sm uppercase tracking-widest text-primary">Contact</h5>
+    <ul class="space-y-4 text-sm">
+      <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-lg">location_on</span>Boulevard Denis Sassou Nguesso, Brazzaville, Congo</li>
+      <li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-lg">call</span>+242 06 000 00 00</li>
+      <li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-lg">mail</span>contact@mines.gouv.cg</li>
+    </ul>
+  </div>
+  <div>
+    <h5 class="font-bold mb-6 text-sm uppercase tracking-widest text-primary">Newsletter</h5>
+    <p class="text-xs mb-4 text-[#0e1b12]/60 dark:text-white/60">Restez informé des dernières actualités minières.</p>
+    <div class="flex">
+      <input class="bg-[#e7f3eb] dark:bg-white/5 border-none rounded-l-lg p-3 text-sm flex-1 focus:ring-1 focus:ring-primary" placeholder="Votre email" type="email"/>
+      <button class="bg-primary text-white p-3 rounded-r-lg font-bold">
+        <span class="material-symbols-outlined text-sm">send</span>
+      </button>
+    </div>
+  </div>
+</div>
+<div class="max-w-7xl mx-auto px-4 mt-12 pt-8 border-t border-[#e7f3eb] dark:border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-[#0e1b12]/40 dark:text-white/40 font-medium">
+<p>© 2024 Ministère des Industries Minières et de la Géologie - République du Congo.</p>
+<div class="flex gap-8">
+<a class="hover:text-primary" href="#">Mentions légales</a>
+<a class="hover:text-primary" href="#">Politique de confidentialité</a>
+<a class="hover:text-primary" href="#">Plan du site</a>
+</div>
+</div>
+</footer>
+
+</body>
+</html>

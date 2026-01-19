@@ -40,38 +40,58 @@
 <body class="bg-background-light dark:bg-background-dark text-[#0e1b12] dark:text-white transition-colors duration-200">
 <div class="flag-accent w-full"></div>
 <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
-<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[#e7f3eb] dark:border-[#2a3f31] px-6 md:px-20 py-4 bg-white dark:bg-[#0e1b12] sticky top-0 z-50">
-<div class="flex items-center gap-8">
-<div class="flex items-center gap-3 text-[#0e1b12] dark:text-white">
-<div class="size-8 text-primary">
-<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-<path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-<h2 class="text-sm md:text-lg font-bold leading-tight uppercase tracking-wide">Industries Minières</h2>
-</div>
-<nav class="hidden lg:flex items-center gap-6">
-<a class="text-sm font-bold text-primary border-b-2 border-primary pb-1" href="index.html">Accueil</a>
-<a class="text-sm font-medium hover:text-primary transition-colors" href="ministere.html">Le Ministre</a>
-<a class="text-sm font-medium hover:text-primary transition-colors" href="mission.html">Missions</a>
-<a class="text-sm font-medium hover:text-primary transition-colors" href="actualite.html">Actualités</a>
-<a class="text-sm font-medium hover:text-primary transition-colors" href="contacts.html">Contacts</a>
-</nav>
-</div>
-<div class="flex items-center gap-4">
-<button id="mobileMenuBtn" class="bg-primary/10 text-primary p-2 rounded-full lg:hidden">
-  <span class="material-symbols-outlined">menu</span>
-</button>
 
-<div class="hidden md:flex items-center bg-[#e7f3eb] dark:bg-[#1a2e21] rounded-lg px-3 py-1.5 border border-primary/10">
-<span class="material-symbols-outlined text-primary text-xl">search</span>
-<input class="bg-transparent border-none focus:ring-0 text-sm w-32 lg:w-48" placeholder="Rechercher..." type="text"/>
-</div>
-<div class="flex items-center gap-2 px-3 py-1.5 bg-primary text-white rounded-lg font-bold text-xs uppercase tracking-tighter shadow-sm">
-<span class="truncate">République du Congo</span>
-</div>
-</div>
+<!-- ================= HEADER ================= -->
+<header
+  class="sticky top-0 z-50 backdrop-blur-md bg-white/90 dark:bg-[#0e1b12]/90
+         border-b border-[#e7f3eb] dark:border-[#2a3f31]">
+
+  <div class="max-w-[1400px] mx-auto px-6 md:px-20 py-4 flex items-center justify-between">
+
+    <!-- LOGO -->
+    <div class="flex items-center gap-5">
+      <img
+        src="images/mines.jpeg"
+        alt="Logo Ministère des Industries Minières"
+        class="h-14 md:h-16 object-contain"
+      />
+      <div class="leading-tight">
+        <h2 class="text-sm md:text-lg font-bold uppercase tracking-wide">
+          Industries Minières
+        </h2>
+        <span class="text-[10px] uppercase tracking-widest text-gray-500 dark:text-gray-400">
+          République du Congo
+        </span>
+      </div>
+    </div>
+
+    <!-- NAV DESKTOP -->
+    <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold">
+      <a class="text-primary border-b-2 border-primary pb-1" href="index.html">Accueil</a>
+      <a class="hover:text-primary transition-colors" href="ministere.html">Le Ministre</a>
+      <a class="hover:text-primary transition-colors" href="mission.html">Missions</a>
+      <a class="hover:text-primary transition-colors" href="actualite.html">Actualités</a>
+      <a class="hover:text-primary transition-colors" href="contacts.html">Contacts</a>
+    </nav>
+
+    <!-- ACTIONS -->
+    <div class="flex items-center gap-4">
+      <button id="mobileMenuBtn"
+        class="lg:hidden p-2 rounded-full bg-primary/10 text-primary">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+
+      <div
+        class="hidden sm:flex items-center px-4 py-2 rounded-xl
+               bg-primary text-white text-xs font-bold uppercase tracking-widest shadow">
+        République du Congo
+      </div>
+    </div>
+
+  </div>
 </header>
+
+
 <!-- MENU MOBILE -->
 <div id="mobileMenu"
      class="fixed inset-0 bg-white dark:bg-[#0e1b12] z-50 hidden lg:hidden flex-col">
@@ -103,67 +123,278 @@
 </div>
 
 <main class="flex-1">
-<section class="relative h-[600px] w-full overflow-hidden">
-<div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 scale-105" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDoK2SaD0PIjliuwJm6Q6-zDQfJ-caGZ_LOOKpPhm5aSa2ysHa1wHVY6lraeswi6rMvgRlsKUGGCk4pd6Y4PMZ6bKN_HKdnkZbaA92MkXTs63y16lioCPQppet1mhFTIV0zhd7-LhlaRCLKGs5hFc2kUbg4dWow1sRze_WhiarWnt2A49PPKJ054OmtFmixU8PJJ9gIgh8x2t974YyLNjunOyL7yxTWid1MozEtUxlo6NQvPkKZmuGKY_Ysa7w9HkLcVql8r21rIiU');"></div>
-<div class="absolute inset-0 hero-gradient"></div>
-<div class="relative h-full max-w-[1200px] mx-auto px-6 md:px-10 flex flex-col justify-center items-start text-white">
-<div class="flex gap-2 mb-6">
-<div class="w-12 h-1 bg-primary"></div>
-<div class="w-12 h-1 bg-secondary-yellow"></div>
-<div class="w-12 h-1 bg-accent-red"></div>
-</div>
-<h1 class="text-4xl md:text-6xl font-bold max-w-2xl leading-tight mb-4">Transformer le potentiel géologique en levier de croissance</h1>
-<p class="text-lg md:text-xl text-gray-200 max-w-xl mb-8 leading-relaxed">Le Ministère des Industries Minières et de la Géologie œuvre pour une exploitation durable et responsable des richesses du sol congolais.</p>
-<div class="flex flex-wrap gap-4">
-<button class="bg-primary hover:bg-primary/90 text-white font-bold py-4 px-8 rounded-lg transition-all flex items-center gap-2 shadow-xl shadow-primary/20">
-                            Découvrir nos Projets
-                            <span class="material-symbols-outlined">arrow_forward</span>
-</button>
+<!-- HERO SLIDER -->
+<!-- ================= HERO SLIDER ================= -->
+<section class="relative h-[700px] overflow-hidden bg-black">
 
-</div>
-</div>
-<div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex gap-3">
-<button class="size-3 rounded-full bg-primary"></button>
-<button class="size-3 rounded-full bg-white/30"></button>
-<button class="size-3 rounded-full bg-white/30"></button>
-</div>
+  <div id="slider" class="relative w-full h-full">
+
+    <!-- SLIDE 1 -->
+    <div class="slide absolute inset-0 opacity-100 transition-opacity duration-1000">
+
+      <img
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoK2SaD0PIjliuwJm6Q6-zDQfJ-caGZ_LOOKpPhm5aSa2ysHa1wHVY6lraeswi6rMvgRlsKUGGCk4pd6Y4PMZ6bKN_HKdnkZbaA92MkXTs63y16lioCPQppet1mhFTIV0zhd7-LhlaRCLKGs5hFc2kUbg4dWow1sRze_WhiarWnt2A49PPKJ054OmtFmixU8PJJ9gIgh8x2t974YyLNjunOyL7yxTWid1MozEtUxlo6NQvPkKZmuGKY_Ysa7w9HkLcVql8r21rIiU"
+        class="absolute inset-0 w-full h-full object-cover opacity-60"
+        alt="Paysage minier Congo">
+
+      <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent"></div>
+
+      <div class="relative h-full flex items-center max-w-[1400px] mx-auto px-6 md:px-20">
+        <div class="max-w-2xl text-white animate-fade">
+
+          <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+            Transformer le potentiel géologique<br>
+            <span class="text-primary">en levier de croissance</span>
+          </h1>
+
+          <p class="text-lg md:text-xl text-gray-200 mb-10">
+            Exploitation durable et responsable des richesses du sol congolais.
+          </p>
+
+          <a href="#"
+             class="inline-flex items-center gap-3 bg-primary
+                    px-8 py-4 rounded-xl font-bold shadow-lg
+                    hover:bg-primary/90 transition">
+            Découvrir nos projets
+            <span class="material-symbols-outlined">arrow_forward</span>
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 2 -->
+    <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000">
+
+      <img
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8mDhwbenKDTzFfwXIITBfF3tGa0uJkjX4g5L6zzFRfWzAqCaPVvNX4aZFP9dpkJU9QCLO0wziEk3dviNPj5k3pXxOfdztKJiQXRxKz8inB-Phh1DLrPfj01KHOO4FTSG_kYwRsxpGIqFeB9znZoVdmn2aBvb92PZc4MBJlhuQiT5iGXP45q4tXBg28iSh3Uyq_NjDKNpohldFtHtwY0Rmn6wjwgyPFex51-6rlBawkJ0DxjhG1aWGsDp7Ji-44bWjpB0FHtS1l_k"
+        class="absolute inset-0 w-full h-full object-cover opacity-60"
+        alt="Mine Congo">
+
+      <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent"></div>
+
+      <div class="relative h-full flex items-center max-w-[1400px] mx-auto px-6 md:px-20">
+        <div class="max-w-2xl text-white">
+
+          <span class="inline-block mb-4 px-5 py-1 rounded-full
+                       bg-primary/20 text-primary font-bold text-sm uppercase">
+            Vision 2025 – 2030
+          </span>
+
+          <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+            Piloter l’avenir minier <br>
+            <span class="text-primary"> du Congo-Brazzaville</span>
+          </h1>
+
+          <p class="text-lg md:text-xl text-gray-200 mb-10">
+            Une industrie minière moderne, transparente et créatrice de valeur.
+          </p>
+
+          <a href="#"
+             class="inline-flex items-center gap-3 bg-primary
+                    px-8 py-4 rounded-xl font-bold shadow-lg
+                    hover:bg-primary/90 transition">
+            Découvrir nos projets
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- INDICATEURS -->
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3 z-20">
+    <span class="dot w-3 h-3 rounded-full bg-primary"></span>
+    <span class="dot w-3 h-3 rounded-full bg-white/40"></span>
+  </div>
+
 </section>
 
 
 
+</br>
+</br>
+<!-- ================== RÉGLEMENTATIONS ================== -->
 <section class="max-w-[1200px] mx-auto px-6 md:px-10 -mt-16 relative z-10">
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-<div class="bg-white dark:bg-[#1a2e21] p-8 rounded-xl shadow-xl border border-primary/10 group hover:border-primary transition-colors cursor-pointer">
-<div class="size-14 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-all">
-<span class="material-symbols-outlined text-3xl">map</span>
-</div>
-<h3 class="text-xl font-bold mb-3"></h3>
-<p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed mb-4">
-                             <span class="material-symbols-outlined text-base"></span>
-</a>
-</div>
-<div class="bg-white dark:bg-[#1a2e21] p-8 rounded-xl shadow-xl border border-secondary-yellow/10 group hover:border-secondary-yellow transition-colors cursor-pointer">
-<div class="size-14 bg-secondary-yellow/10 rounded-lg flex items-center justify-center text-secondary-yellow mb-6 group-hover:bg-secondary-yellow group-hover:text-white transition-all">
-<span class="material-symbols-outlined text-3xl">description</span>
-</div>
-<h3 class="text-xl font-bold mb-3"></h3>
-<p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed mb-4">
-                             <span class="material-symbols-outlined text-base"></span>
-</a>
-</div>
-<div class="bg-white dark:bg-[#1a2e21] p-8 rounded-xl shadow-xl border border-accent-red/10 group hover:border-accent-red transition-colors cursor-pointer">
-<div class="size-14 bg-accent-red/10 rounded-lg flex items-center justify-center text-accent-red mb-6 group-hover:bg-accent-red group-hover:text-white transition-all">
-<span class="material-symbols-outlined text-3xl">gavel</span>
-</div>
-<h3 class="text-xl font-bold mb-3">Réglementations</h3>
-<p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed mb-4">Téléchargez le Code Minier révisé et l'ensemble des textes législatifs régissant le secteur extractif.</p>
-<a class="text-primary text-sm font-bold flex items-center gap-2 hover:underline" href="reglement.html">
-                            Voir les textes <span class="material-symbols-outlined text-base">download</span>
-</a>
-</div>
-</div>
+  <div class="flex justify-center">
+
+    <div
+      class="reglementation-card bg-white dark:bg-[#1a2e21] p-10 rounded-2xl shadow-xl
+             border border-accent-red/20 hover:border-accent-red
+             transition-all duration-500 ease-out
+             hover:-translate-y-2 hover:shadow-2xl
+             max-w-xl w-full group opacity-0 translate-y-8">
+
+      <!-- Icône -->
+      <div
+        class="size-16 mx-auto bg-accent-red/10 rounded-xl
+               flex items-center justify-center text-accent-red
+               mb-6 group-hover:bg-accent-red group-hover:text-white
+               transition-all duration-300">
+        <span class="material-symbols-outlined text-4xl">gavel</span>
+      </div>
+
+      <!-- Titre -->
+      <h3 class="text-2xl font-bold text-center mb-4">
+        Réglementations
+      </h3>
+
+      <!-- Texte (INCHANGÉ) -->
+      <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed mb-8 text-center">
+        Téléchargez le Code Minier révisé et l'ensemble des textes législatifs
+        régissant le secteur extractif.
+      </p>
+
+      <!-- Bouton -->
+      <div class="flex justify-center">
+        <a href="reglement.html"
+           class="inline-flex items-center gap-3 bg-accent-red text-white
+                  px-8 py-4 rounded-xl font-bold shadow-lg
+                  hover:bg-accent-red/90 transition-all">
+          Voir les textes
+          <span class="material-symbols-outlined text-base">download</span>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
 </section>
+
+
+
+
+
+<!-- ================== ACTUALITÉS ================== -->
 <section class="max-w-[1200px] mx-auto px-6 md:px-10 py-24">
+
+  <!-- En-tête -->
+  <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
+    <div>
+      <span class="text-primary font-bold uppercase tracking-widest text-sm">
+        Communication
+      </span>
+      <h2 class="text-3xl md:text-4xl font-bold mt-2">
+        Dernières Actualités
+      </h2>
+    </div>
+    <a href="#"
+       class="text-gray-500 hover:text-primary font-bold text-sm border-b border-gray-300 pb-1 transition">
+      Toutes les actualités
+    </a>
+  </div>
+
+  <!-- Contenu -->
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+
+    <!-- ACTUALITÉ PRINCIPALE -->
+    <article
+      class="lg:col-span-2 group opacity-0 translate-y-8 transition-all duration-700 ease-out news-animate">
+
+      <div class="relative overflow-hidden rounded-3xl aspect-[16/9] mb-8 shadow-lg">
+        <div
+          class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+          style="background-image:url('https://i0.wp.com/gouvernement.cg/wp-content/uploads/2023/08/F4DpLGVaYAAXD9l-scaled.jpeg?resize=1080%2C675&ssl=1');">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+        <div class="absolute top-5 left-5 bg-primary text-white text-xs font-bold py-1.5 px-4 rounded-full uppercase shadow">
+          Important
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-4">
+        <div class="flex items-center gap-4 text-xs font-bold text-gray-400 uppercase">
+          <span>18 août 2023</span>
+          <span class="w-1 h-1 rounded-full bg-gray-300"></span>
+          <span>Communiqué officiel</span>
+        </div>
+
+        <h3 class="text-2xl md:text-3xl font-bold leading-snug group-hover:text-primary transition-colors">
+          Mines : Convention d’exploitation des potasses
+        </h3>
+
+        <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+          Vendredi 18 août 2023, dans la grande salle du Ministère de l’Economie et des finances,
+          à Brazzaville, le gouvernement congolais a signé une Convention d’exploitation minière
+          du minerai de potasse du gisement Kanga, avec les sociétés KANGA POTASH et sa filiale
+          de droit congolais SEPK S.A.
+        </p>
+
+        <a href="detail.html"
+           class="mt-2 inline-flex items-center gap-2 text-primary font-bold">
+          Lire la suite
+          <span class="material-symbols-outlined text-sm">arrow_forward</span>
+        </a>
+      </div>
+    </article>
+
+    <!-- LISTE ACTUALITÉS -->
+    <div class="flex flex-col gap-10 opacity-0 translate-y-8 transition-all duration-700 delay-150 news-animate">
+
+      <!-- item -->
+      <a href="detai_l.html"
+         class="group block border-l-4 border-primary/30 pl-5 pb-6 hover:border-primary transition">
+        <span class="text-xs font-bold text-primary mb-2 block uppercase">
+          15 avril 2025
+        </span>
+        <h4 class="font-bold leading-snug group-hover:text-primary transition-colors">
+          Partenariat stratégique : signature d'un protocole d'accord pour le fer de Mayoko
+        </h4>
+      </a>
+
+      <!-- item -->
+      <div class="group border-l-4 border-primary/10 pl-5 pb-6">
+        <span class="text-xs font-bold text-primary mb-2 block uppercase">
+          02 avril 2025
+        </span>
+        <h4 class="font-bold leading-snug group-hover:text-primary transition-colors">
+          Lancement du recensement national des artisans miniers de la zone sud
+        </h4>
+      </div>
+
+      <!-- item -->
+      <div class="group border-l-4 border-primary/10 pl-5 pb-6">
+        <span class="text-xs font-bold text-primary mb-2 block uppercase">
+          28 mars 2025
+        </span>
+        <h4 class="font-bold leading-snug group-hover:text-primary transition-colors">
+          Conférence internationale : le Congo présente ses opportunités à INDABA Cape Town
+        </h4>
+      </div>
+
+      <!-- ALERTES -->
+      <div class="bg-gray-50 dark:bg-[#1a2e21] p-6 rounded-2xl border border-primary/10 shadow-sm">
+        <h4 class="font-bold mb-3 flex items-center gap-2 text-primary">
+          <span class="material-symbols-outlined">notifications_active</span>
+          Alertes Mails
+        </h4>
+        <p class="text-xs text-gray-500 mb-4">
+          Recevez les nouveaux décrets et appels d'offres directement.
+        </p>
+        <div class="flex">
+          <input type="email"
+                 placeholder="votre@email.cg"
+                 class="flex-1 text-xs border-primary/20 bg-white dark:bg-[#0e1b12]
+                        rounded-l-lg focus:ring-primary focus:border-primary">
+          <button class="bg-primary text-white px-3 rounded-r-lg">
+            <span class="material-symbols-outlined text-sm">send</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<!-- ================== RESSOURCES MINIÈRES ================== -->
+<section class="max-w-[1400px] mx-auto px-6 md:px-10 py-24">
+
+  <!-- TITRE -->
   <div class="text-center mb-16">
     <span class="text-primary font-bold uppercase tracking-widest text-sm">
       Patrimoine géologique
@@ -172,131 +403,125 @@
       Nos Ressources Minières
     </h2>
     <p class="text-gray-500 dark:text-gray-400 max-w-2xl mx-auto mt-4">
-      La République du Congo dispose d’un sous-sol riche et diversifié, constituant
-      un levier stratégique pour le développement économique national.
+      La République du Congo dispose d’un sous-sol riche et diversifié,
+      constituant un levier stratégique pour le développement économique national.
     </p>
   </div>
 
+  <!-- GRILLE DES RESSOURCES -->
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 
     <!-- FER -->
-    <div class="bg-white dark:bg-[#1a2e21] rounded-xl shadow-lg border border-primary/10 overflow-hidden group hover:border-primary transition-colors">
-      <img src="https://www.bing.com/th/id/OIP.UQDuZ8Uo8xTjDBJINlOiiAHaHa?w=189&h=211&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
-           alt="Minerai de fer Congo"
-           class="h-40 w-full object-cover group-hover:scale-105 transition-transform duration-500">
+    <div class="resource-card bg-white dark:bg-[#1a2e21] rounded-2xl shadow-lg border border-primary/10 overflow-hidden group hover:border-primary transition-all duration-300 opacity-0 translate-y-8">
+      <img
+        src="https://www.bing.com/th/id/OIP.UQDuZ8Uo8xTjDBJINlOiiAHaHa?w=400"
+        data-image="https://www.bing.com/th/id/OIP.UQDuZ8Uo8xTjDBJINlOiiAHaHa?w=1200"
+        alt="Minerai de fer Congo"
+        class="h-40 w-full object-cover cursor-pointer group-hover:scale-105 transition-transform duration-500"
+      >
       <div class="p-6">
         <h3 class="font-bold text-lg mb-2">Minerai de Fer</h3>
-        <p class="text-sm text-gray-500 dark:text-gray-400">
-          Importants gisements localisés notamment à Mayoko et Zanaga,
-          positionnant le Congo parmi les pays à fort potentiel sidérurgique.
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">
+          Importants gisements à Mayoko et Zanaga,
+          positionnant le Congo comme un acteur sidérurgique potentiel.
         </p>
+        <button
+          class="text-primary font-bold text-sm flex items-center gap-2 hover:underline"
+          data-image="https://www.bing.com/th/id/OIP.UQDuZ8Uo8xTjDBJINlOiiAHaHa?w=1200"
+        >
+          Voir plus
+          <span class="material-symbols-outlined text-base">zoom_in</span>
+        </button>
       </div>
     </div>
 
     <!-- POTASSE -->
-    <div class="bg-white dark:bg-[#1a2e21] rounded-xl shadow-lg border border-secondary-yellow/10 overflow-hidden group hover:border-secondary-yellow transition-colors">
-      <img src="https://www.bing.com/th/id/OIP.G4YCelST3u_dVellVkkpUwHaFk?w=226&h=211&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
-           alt="Potasse Congo"
-           class="h-40 w-full object-cover group-hover:scale-105 transition-transform duration-500">
+    <div class="resource-card bg-white dark:bg-[#1a2e21] rounded-2xl shadow-lg border border-secondary-yellow/10 overflow-hidden group hover:border-secondary-yellow transition-all duration-300 opacity-0 translate-y-8">
+      <img
+        src="https://www.bing.com/th/id/OIP.G4YCelST3u_dVellVkkpUwHaFk?w=400"
+        data-image="https://www.bing.com/th/id/OIP.G4YCelST3u_dVellVkkpUwHaFk?w=1200"
+        alt="Potasse Congo"
+        class="h-40 w-full object-cover cursor-pointer group-hover:scale-105 transition-transform duration-500"
+      >
       <div class="p-6">
         <h3 class="font-bold text-lg mb-2">Potasse</h3>
-        <p class="text-sm text-gray-500 dark:text-gray-400">
-          Ressource stratégique présente sur la côte atlantique,
-          destinée principalement à la production d’engrais.
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">
+          Ressource stratégique de la côte atlantique,
+          essentielle à la production d’engrais agricoles.
         </p>
+        <button
+          class="text-secondary-yellow font-bold text-sm flex items-center gap-2 hover:underline"
+          data-image="https://www.bing.com/th/id/OIP.G4YCelST3u_dVellVkkpUwHaFk?w=1200"
+        >
+          Voir plus
+          <span class="material-symbols-outlined text-base">zoom_in</span>
+        </button>
       </div>
     </div>
 
     <!-- OR -->
-    <div class="bg-white dark:bg-[#1a2e21] rounded-xl shadow-lg border border-accent-red/10 overflow-hidden group hover:border-accent-red transition-colors">
-      <img src="https://www.bing.com/th/id/OIP.M0HROBU1wJL2tCUJBRcN7wHaEK?w=336&h=211&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
-           alt="Or artisanal Congo"
-           class="h-40 w-full object-cover group-hover:scale-105 transition-transform duration-500">
+    <div class="resource-card bg-white dark:bg-[#1a2e21] rounded-2xl shadow-lg border border-accent-red/10 overflow-hidden group hover:border-accent-red transition-all duration-300 opacity-0 translate-y-8">
+      <img
+        src="https://www.bing.com/th/id/OIP.M0HROBU1wJL2tCUJBRcN7wHaEK?w=400"
+        data-image="https://www.bing.com/th/id/OIP.M0HROBU1wJL2tCUJBRcN7wHaEK?w=1200"
+        alt="Or Congo"
+        class="h-40 w-full object-cover cursor-pointer group-hover:scale-105 transition-transform duration-500"
+      >
       <div class="p-6">
         <h3 class="font-bold text-lg mb-2">Or</h3>
-        <p class="text-sm text-gray-500 dark:text-gray-400">
-          Exploité principalement de manière artisanale dans le nord du pays,
-          l’or constitue une ressource à fort potentiel de formalisation.
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">
+          Principalement exploité de façon artisanale dans le nord du pays,
+          avec un fort potentiel de formalisation.
         </p>
+        <button
+          class="text-accent-red font-bold text-sm flex items-center gap-2 hover:underline"
+          data-image="https://www.bing.com/th/id/OIP.M0HROBU1wJL2tCUJBRcN7wHaEK?w=1200"
+        >
+          Voir plus
+          <span class="material-symbols-outlined text-base">zoom_in</span>
+        </button>
       </div>
     </div>
 
     <!-- DIAMANT -->
-    <div class="bg-white dark:bg-[#1a2e21] rounded-xl shadow-lg border border-primary/10 overflow-hidden group hover:border-primary transition-colors">
-      <img src="https://www.bing.com/th/id/OIP.NABFVizy2lItbqcv3hiqRwHaEL?w=273&h=211&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
-           alt="Diamant Congo"
-           class="h-40 w-full object-cover group-hover:scale-105 transition-transform duration-500">
+    <div class="resource-card bg-white dark:bg-[#1a2e21] rounded-2xl shadow-lg border border-primary/10 overflow-hidden group hover:border-primary transition-all duration-300 opacity-0 translate-y-8">
+      <img
+        src="https://www.bing.com/th/id/OIP.NABFVizy2lItbqcv3hiqRwHaEL?w=400"
+        data-image="https://www.bing.com/th/id/OIP.NABFVizy2lItbqcv3hiqRwHaEL?w=1200"
+        alt="Diamant Congo"
+        class="h-40 w-full object-cover cursor-pointer group-hover:scale-105 transition-transform duration-500"
+      >
       <div class="p-6">
         <h3 class="font-bold text-lg mb-2">Diamant</h3>
-        <p class="text-sm text-gray-500 dark:text-gray-400">
-          Présent dans certaines zones alluvionnaires,
-          le diamant congolais contribue au secteur artisanal et à l’exportation.
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">
+          Présent dans les zones alluvionnaires,
+          contribuant au secteur artisanal et à l’exportation.
         </p>
+        <button
+          class="text-primary font-bold text-sm flex items-center gap-2 hover:underline"
+          data-image="https://www.bing.com/th/id/OIP.NABFVizy2lItbqcv3hiqRwHaEL?w=1200"
+        >
+          Voir plus
+          <span class="material-symbols-outlined text-base">zoom_in</span>
+        </button>
       </div>
     </div>
 
   </div>
+
+  <!-- BOUTON VOIR TOUTES LES RESSOURCES -->
+  <div class="flex justify-center mt-16">
+    <a href="ressources.html"
+       class="bg-primary text-white font-bold px-10 py-4 rounded-xl shadow-lg hover:bg-primary/90 transition-all flex items-center gap-3">
+      Voir toutes nos ressources minières
+      <span class="material-symbols-outlined">arrow_forward</span>
+    </a>
+  </div>
 </section>
 
-<section class="max-w-[1200px] mx-auto px-6 md:px-10 py-24">
-<div class="flex items-end justify-between mb-12">
-<div>
-<span class="text-primary font-bold uppercase tracking-widest text-sm">Communication</span>
-<h2 class="text-3xl font-bold mt-2">Dernières Actualités</h2>
-</div>
-<a class="text-gray-500 hover:text-primary font-bold text-sm border-b border-gray-300 pb-1" href="#">Toutes les actualités</a>
-</div>
-<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-<article class="lg:col-span-2 group cursor-pointer">
-<div class="relative overflow-hidden rounded-2xl aspect-[16/9] mb-6">
-<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCac4lOhjFjCbBEAloPqbFhHom-LlX-Fr19ceglVDsYoah9wWv9QlkNNUP1dBxBU_Edn13A7POvrRB3IiNhKKOucfK_yMYiZTKZSw9LUM-rtuN4sYipfaUCnPESejECovE1iny6RGY7QE5bNIRu8XEPqPcRqNSiv9JPBfpeXHz7Hb-zmrGx5syd2rAnBHn4t7BI76dfbyTw4jyBs9JwdTbrUgDIaSszfb_8RVVu9UN9z9iw1EjCEHRPyZrw42hsxFn7Bu5aCE-Ue9Y');"></div>
-<div class="absolute top-4 left-4 bg-primary text-white text-xs font-bold py-1 px-3 rounded uppercase">Important</div>
-</div>
-<div class="flex flex-col gap-3">
-<div class="flex items-center gap-4 text-xs font-bold text-gray-400">
-<span>29 AVRIL 2025</span>
-<span class="w-1 h-1 rounded-full bg-gray-300"></span>
-<span>COMMUNIQUÉ OFFICIEL</span>
-</div>
-<h3 class="text-2xl md:text-3xl font-bold group-hover:text-primary transition-colors">Note de service : Renforcement des inspections départementales dans le secteur minier</h3>
-<p class="text-gray-600 dark:text-gray-400 leading-relaxed">
-                                Le Ministre d'État Pierre Oba a signé ce jour une directive majeure visant à intensifier le contrôle technique et administratif sur l'ensemble du territoire national pour garantir la conformité des exploitations...
-                            </p>
-<a class="mt-2 text-primary font-bold flex items-center gap-2" href="#">
-                                Lire la suite
-                                <span class="material-symbols-outlined text-sm">arrow_forward</span>
-</a>
-</div>
-</article>
-<div class="flex flex-col gap-8">
-<div class="group cursor-pointer border-b border-gray-100 dark:border-[#2a3f31] pb-6">
-<span class="text-xs font-bold text-primary mb-2 block">15 AVRIL 2025</span>
-<h4 class="font-bold leading-snug group-hover:text-primary transition-colors">Partenariat stratégique : signature d'un protocole d'accord pour le fer de Mayoko</h4>
-</div>
-<div class="group cursor-pointer border-b border-gray-100 dark:border-[#2a3f31] pb-6">
-<span class="text-xs font-bold text-primary mb-2 block">02 AVRIL 2025</span>
-<h4 class="font-bold leading-snug group-hover:text-primary transition-colors">Lancement du recensement national des artisans miniers de la zone sud</h4>
-</div>
-<div class="group cursor-pointer border-b border-gray-100 dark:border-[#2a3f31] pb-6">
-<span class="text-xs font-bold text-primary mb-2 block">28 MARS 2025</span>
-<h4 class="font-bold leading-snug group-hover:text-primary transition-colors">Conférence internationale : le Congo présente ses opportunités à INDABA Cape Town</h4>
-</div>
-<div class="bg-gray-50 dark:bg-[#1a2e21] p-6 rounded-xl border border-primary/10">
-<h4 class="font-bold mb-3 flex items-center gap-2 text-primary">
-<span class="material-symbols-outlined">notifications_active</span>
-                                Alertes Mails
-                            </h4>
-<p class="text-xs text-gray-500 mb-4">Recevez les nouveaux décrets et appels d'offres directement.</p>
-<div class="flex">
-<input class="flex-1 text-xs border-primary/20 bg-white dark:bg-[#0e1b12] rounded-l-lg focus:ring-primary focus:border-primary" placeholder="votre@email.cg" type="email"/>
-<button class="bg-primary text-white p-2 rounded-r-lg">
-<span class="material-symbols-outlined text-sm">send</span>
-</button>
-</div>
-</div>
-</div>
-</div>
-</section>
+
+
+
 <section class="bg-white dark:bg-[#0e1b12] border-y border-[#e7f3eb] dark:border-[#2a3f31] py-16">
 <div class="max-w-[1200px] mx-auto px-6 md:px-10 flex flex-col md:flex-row items-center justify-between gap-10">
 <div class="flex-1">
@@ -321,6 +546,10 @@
 </div>
 </section>
 </main>
+
+</br>
+</br>
+
 <footer class="bg-white dark:bg-[#0e1b12] border-t border-[#e7f3eb] dark:border-[#2a3f31] py-12">
 <div class="max-w-[1200px] mx-auto px-6 md:px-10 grid grid-cols-1 md:grid-cols-3 gap-12 text-sm">
 <div class="flex flex-col gap-6">
@@ -386,6 +615,19 @@
 </div>
 </footer>
 </div>
+<!-- ================== MODALE IMAGE ================== -->
+<div id="resourceModal" class="fixed inset-0 bg-black/80 hidden items-center justify-center z-50">
+  <div class="relative max-w-5xl w-full px-4">
+    <button id="closeResourceModal"
+      class="absolute -top-12 right-0 text-white text-4xl font-bold">
+      &times;
+    </button>
+    <img id="resourceModalImage"
+      src=""
+      alt="Ressource minière agrandie"
+      class="w-full max-h-[80vh] object-contain rounded-xl shadow-2xl">
+  </div>
+</div>
 
 <script>
   const mobileMenuBtn = document.getElementById("mobileMenuBtn");
@@ -403,5 +645,101 @@
   });
 </script>
 
+<script>
+  const slides = document.querySelectorAll('.slide');
+  const dots = document.querySelectorAll('.dot');
+  let current = 0;
 
+  setInterval(() => {
+    slides[current].classList.remove('opacity-100');
+    slides[current].classList.add('opacity-0');
+    dots[current].classList.remove('bg-primary');
+    dots[current].classList.add('bg-white/40');
+
+    current = (current + 1) % slides.length;
+
+    slides[current].classList.remove('opacity-0');
+    slides[current].classList.add('opacity-100');
+    dots[current].classList.remove('bg-white/40');
+    dots[current].classList.add('bg-primary');
+  }, 6000);
+</script>
+
+<!-- ================== SCRIPT ================== -->
+<script>
+  const modal = document.getElementById("resourceModal");
+  const modalImg = document.getElementById("resourceModalImage");
+  const closeBtn = document.getElementById("closeResourceModal");
+
+  document.querySelectorAll(".resource-trigger").forEach(el => {
+    el.addEventListener("click", () => {
+      modalImg.src = el.dataset.image || el.src;
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
+    });
+  });
+
+  closeBtn.addEventListener("click", () => {
+    modal.classList.add("hidden");
+    modal.classList.remove("flex");
+  });
+
+  modal.addEventListener("click", e => {
+    if (e.target === modal) {
+      modal.classList.add("hidden");
+      modal.classList.remove("flex");
+    }
+  });
+</script>
+
+<!-- ================== ANIMATION AU CHARGEMENT ================== -->
+<script>
+  const card = document.querySelector('.reglementation-card');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        card.classList.remove('opacity-0', 'translate-y-8');
+        card.classList.add('opacity-100', 'translate-y-0');
+        observer.disconnect();
+      }
+    });
+  }, { threshold: 0.4 });
+
+  observer.observe(card);
+</script>
+
+<!-- ================== ANIMATION SCROLL ================== -->
+<script>
+  const newsItems = document.querySelectorAll('.news-animate');
+
+  const newsObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.remove('opacity-0', 'translate-y-8');
+        entry.target.classList.add('opacity-100', 'translate-y-0');
+        newsObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  newsItems.forEach(item => newsObserver.observe(item));
+</script>
+
+<!-- ================== ANIMATION AU SCROLL ================== -->
+<script>
+  const resources = document.querySelectorAll('.resource-card');
+
+  const resourceObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.remove('opacity-0','translate-y-8');
+        entry.target.classList.add('opacity-100','translate-y-0');
+        resourceObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  resources.forEach(card => resourceObserver.observe(card));
+</script>
 </body></html>

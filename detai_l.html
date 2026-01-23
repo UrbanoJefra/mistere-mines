@@ -41,50 +41,53 @@
 <div class="flag-accent w-full"></div>
 <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
 
-<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[#e7f3eb] dark:border-[#2a3f31] px-6 md:px-20 py-4 bg-white dark:bg-[#0e1b12] sticky top-0 z-50">
+<header
+  class="sticky top-0 z-50 backdrop-blur-md bg-white/90 dark:bg-[#0e1b12]/90
+         border-b border-[#e7f3eb] dark:border-[#2a3f31]">
 
-  <!-- LOGO + TITRE + NAV -->
-  <div class="flex items-center gap-10">
+  <div class="max-w-[1400px] mx-auto px-6 md:px-20 py-4 flex items-center justify-between">
 
-    <!-- LOGO + TEXTE -->
-    <div class="flex items-center gap-4 text-[#0e1b12] dark:text-white">
+    <!-- LOGO -->
+    <div class="flex items-center gap-5">
       <img
         src="images/mines.jpeg"
-        alt="Logo Ministère des Industries Minières et de la Géologie - Congo Brazzaville"
-        class="h-14 md:h-16 w-auto object-contain"
+        alt="Logo Ministère des Industries Minières"
+        class="h-14 md:h-16 object-contain"
       />
+      <div class="leading-tight">
       <h2 class="text-sm md:text-lg font-bold uppercase tracking-wide">
-        Industries Minières
-      </h2>
+  Ministère des Industries Minières <br class="hidden md:block"/> et de la Géologie
+</h2>
+
+        <span class="text-[10px] uppercase tracking-widest text-gray-500 dark:text-gray-400">
+          République du Congo
+        </span>
+      </div>
     </div>
 
-    <!-- NAVIGATION DESKTOP -->
-    <nav class="hidden lg:flex items-center gap-6">
-      <a class="text-sm font-bold text-primary border-b-2 border-primary pb-1" href="index.html">Accueil</a>
-      <a class="text-sm font-medium hover:text-primary transition-colors" href="ministere.html">Le Ministre</a>
-      <a class="text-sm font-medium hover:text-primary transition-colors" href="mission.html">Missions</a>
-      <a class="text-sm font-medium hover:text-primary transition-colors" href="actualite.html">Actualités</a>
-      <a class="text-sm font-medium hover:text-primary transition-colors" href="contacts.html">Contacts</a>
+    <!-- NAV DESKTOP -->
+    <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold">
+      <a class="text-primary border-b-2 border-primary pb-1" href="index.html">Accueil</a>
+      <a class="hover:text-primary transition-colors" href="ministere.html">Le Ministre</a>
+      <a class="hover:text-primary transition-colors" href="mission.html">Missions</a>
+      <a class="hover:text-primary transition-colors" href="actualite.html">Actualités</a>
+      <a class="hover:text-primary transition-colors" href="reglement.html">Réglementations</a>
+      <a class="hover:text-primary transition-colors" href="contacts.html">Contacts</a>
     </nav>
 
-  </div>
+    <!-- ACTIONS -->
+    <div class="flex items-center gap-4">
+      <button id="mobileMenuBtn"
+        class="lg:hidden p-2 rounded-full bg-primary/10 text-primary">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
 
-  <!-- ACTIONS DROITE -->
-  <div class="flex items-center gap-4">
-
-    <!-- MENU MOBILE -->
-    <button id="mobileMenuBtn" class="bg-primary/10 text-primary p-2 rounded-full lg:hidden">
-      <span class="material-symbols-outlined">menu</span>
-    </button>
-
-    <!-- BADGE PAYS -->
-    <div class="flex items-center gap-2 px-3 py-1.5 bg-primary text-white rounded-lg font-bold text-xs uppercase tracking-tighter shadow-sm">
-      <span class="truncate">République du Congo</span>
+      
     </div>
 
   </div>
-
 </header>
+
 
 <!-- MENU MOBILE -->
 <div id="mobileMenu"
@@ -106,9 +109,10 @@
     <a href="ministere.html" class="hover:text-primary">Le Ministre</a>
     <a href="mission.html" class="hover:text-primary">Missions</a>
     <a href="actualite.html" class="hover:text-primary">Actualités</a>
+    <a class="hover:text-primary transition-colors" href="reglement.html">Réglementations</a>
     <a href="contacts.html" class="hover:text-primary">Contacts</a>
   </nav>
-
+  </div> <!-- FIN #mobileMenu -->
   <!-- Footer menu -->
   <div class="mt-auto px-6 py-6 border-t border-gray-200 dark:border-[#2a3f31] text-xs text-gray-400">
     République du Congo<br>

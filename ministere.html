@@ -42,6 +42,8 @@
 <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
 
 <!-- ================= HEADER ================= -->
+
+
 <header
   class="sticky top-0 z-50 backdrop-blur-md bg-white/90 dark:bg-[#0e1b12]/90
          border-b border-[#e7f3eb] dark:border-[#2a3f31]">
@@ -56,9 +58,10 @@
         class="h-14 md:h-16 object-contain"
       />
       <div class="leading-tight">
-        <h2 class="text-sm md:text-lg font-bold uppercase tracking-wide">
-          Industries Minières
-        </h2>
+      <h2 class="text-sm md:text-lg font-bold uppercase tracking-wide">
+  Ministère des Industries Minières <br class="hidden md:block"/> et de la Géologie
+</h2>
+
         <span class="text-[10px] uppercase tracking-widest text-gray-500 dark:text-gray-400">
           République du Congo
         </span>
@@ -88,18 +91,33 @@
   </div>
 </header>
 
-<!-- Urgent Flash News -->
-<div class="bg-secondary-yellow/10 border-y border-secondary-yellow/20 py-4">
-<div class="max-w-7xl mx-auto px-4 flex items-center gap-4">
-<span class="flex items-center gap-2 bg-secondary-yellow text-slate-900 px-3 py-1 rounded font-bold text-xs uppercase animate-pulse">
-<span class="material-icons text-sm"></span> Urgent
-            </span>
-<p class="text-sm md:text-base font-medium text-slate-700 dark:text-slate-300 truncate">
-                Publication de la note de service du 29 avril 2025 relative aux inspections départementales obligatoires.
-            </p>
-<a class="ml-auto text-primary font-bold text-sm underline decoration-2 underline-offset-4 flex-shrink-0" href="#">Lire plus</a>
-</div>
-</div>
+
+<!-- MENU MOBILE -->
+<div id="mobileMenu"
+     class="fixed inset-0 bg-white dark:bg-[#0e1b12] z-50 hidden lg:hidden flex-col">
+
+  <!-- Header menu mobile -->
+  <div class="flex items-center justify-between px-6 py-4 border-b border-gray-200 dark:border-[#2a3f31]">
+    <h3 class="font-bold uppercase tracking-wide text-primary">
+      Menu
+    </h3>
+    <button id="closeMobileMenu" class="text-primary">
+      <span class="material-symbols-outlined text-3xl">close</span>
+    </button>
+  </div>
+
+  <!-- Liens -->
+  <nav class="flex flex-col px-6 py-8 gap-6 text-lg font-semibold">
+    <a href="code.html" class="hover:text-primary">Accueil</a>
+    <a href="ministere.html" class="hover:text-primary">Le Ministre</a>
+    <a href="mission.html" class="hover:text-primary">Missions</a>
+    <a href="actualite.html" class="hover:text-primary">Actualités</a>
+    <a class="hover:text-primary transition-colors" href="reglement.html">Réglementations</a>
+    <a href="contacts.html" class="hover:text-primary">Contacts</a>
+  </nav>
+</div> <!-- FIN #mobileMenu -->
+
+
 <!-- Minister Section -->
 <section class="py-24 bg-white dark:bg-background-dark">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -202,86 +220,133 @@
 <section class="py-24 bg-white dark:bg-background-dark">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
 
-    <!-- MOT DU MINISTRE -->
-   
-
-    <!-- MEMBRES DU BUREAU -->
+    <!-- TITRE -->
     <div>
       <h3 class="text-3xl font-bold text-slate-900 dark:text-white mb-8 flex items-center gap-3">
-        <span class="w-12 h-1 bg-primary rounded-full"></span> Membres du Bureau & Cabinet
+        <span class="w-12 h-1 bg-primary rounded-full"></span>
+        Membres du Bureau & Cabinet
       </h3>
 
+      <!-- GRILLE -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        <!-- Exemple membre -->
-        <div class="group bg-white dark:bg-[#1a2e21] rounded-2xl shadow-lg border border-primary/10 overflow-hidden hover:shadow-2xl transition-all">
-          <img class="h-56 w-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Flag_of_the_Republic_of_the_Congo.svg/langfr-250px-Flag_of_the_Republic_of_the_Congo.svg.png" alt="Secrétaire Général"/>
-          <div class="p-6 text-center">
-            <p class="font-bold text-lg text-slate-900 dark:text-white"></p>
-            <p class="text-primary font-medium text-sm">Secrétaire Général</p>
+
+        <!-- SECRÉTAIRE GÉNÉRAL -->
+        <div class="group relative bg-white dark:bg-[#1a2e21] rounded-2xl shadow-lg border border-primary/10 overflow-hidden hover:shadow-2xl transition-all">
+          <img
+            class="h-56 w-full object-cover group-hover:scale-105 transition-transform duration-500"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Flag_of_the_Republic_of_the_Congo.svg/langfr-250px-Flag_of_the_Republic_of_the_Congo.svg.png"
+            alt="Secrétaire Général"
+          />
+
+          <!-- OVERLAY -->
+          <div class="absolute inset-0 bg-[#0e1b12]/80 text-white flex items-center justify-center text-center px-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <p class="text-sm leading-relaxed">
+              Coordonne l’ensemble des services administratifs du ministère et
+              veille à la mise en œuvre des décisions stratégiques.
+            </p>
+          </div>
+
+          <!-- TEXTE -->
+          <div class="p-6 text-center relative z-10 bg-white dark:bg-[#1a2e21]">
+            <p class="font-bold text-lg text-slate-900 dark:text-white">
+              Secrétaire Général
+            </p>
+            <p class="text-primary font-medium text-sm">
+              Administration centrale
+            </p>
           </div>
         </div>
 
-        <div class="group bg-white dark:bg-[#1a2e21] rounded-2xl shadow-lg border border-primary/10 overflow-hidden hover:shadow-2xl transition-all">
-          <img class="h-56 w-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Flag_of_the_Republic_of_the_Congo.svg/langfr-250px-Flag_of_the_Republic_of_the_Congo.svg.png" alt="Directeur des Mines"/>
-          <div class="p-6 text-center">
-            <p class="font-bold text-lg text-slate-900 dark:text-white">Mr OPO Fiacre Urbain</p>
-            <p class="text-primary font-medium text-sm">Directeur général des Mines</p>
+        <!-- DIRECTEUR GÉNÉRAL DES MINES -->
+        <div class="group relative bg-white dark:bg-[#1a2e21] rounded-2xl shadow-lg border border-primary/10 overflow-hidden hover:shadow-2xl transition-all">
+          <img
+            class="h-56 w-full object-cover group-hover:scale-105 transition-transform duration-500"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Flag_of_the_Republic_of_the_Congo.svg/langfr-250px-Flag_of_the_Republic_of_the_Congo.svg.png"
+            alt="Directeur Général des Mines"
+          />
+
+          <div class="absolute inset-0 bg-[#0e1b12]/80 text-white flex items-center justify-center text-center px-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <p class="text-sm leading-relaxed">
+              Supervise l’exploitation minière nationale, le cadastre minier
+              et le respect des normes techniques et environnementales.
+            </p>
+          </div>
+
+          <div class="p-6 text-center relative z-10 bg-white dark:bg-[#1a2e21]">
+            <p class="font-bold text-lg text-slate-900 dark:text-white">
+              Mr OPO Fiacre Urbain
+            </p>
+            <p class="text-primary font-medium text-sm">
+              Directeur Général des Mines
+            </p>
           </div>
         </div>
 
-        <div class="group bg-white dark:bg-[#1a2e21] rounded-2xl shadow-lg border border-primary/10 overflow-hidden hover:shadow-2xl transition-all">
-          <img class="h-56 w-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Flag_of_the_Republic_of_the_Congo.svg/langfr-250px-Flag_of_the_Republic_of_the_Congo.svg.png" alt="Directeur Technique"/>
-          <div class="p-6 text-center">
-            <p class="font-bold text-lg text-slate-900 dark:text-white"></p>
-            <p class="text-primary font-medium text-sm">Directeur Technique</p>
+        <!-- DIRECTEUR TECHNIQUE -->
+        <div class="group relative bg-white dark:bg-[#1a2e21] rounded-2xl shadow-lg border border-primary/10 overflow-hidden hover:shadow-2xl transition-all">
+          <img
+            class="h-56 w-full object-cover group-hover:scale-105 transition-transform duration-500"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Flag_of_the_Republic_of_the_Congo.svg/langfr-250px-Flag_of_the_Republic_of_the_Congo.svg.png"
+            alt="Directeur Technique"
+          />
+
+          <div class="absolute inset-0 bg-[#0e1b12]/80 text-white flex items-center justify-center text-center px-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <p class="text-sm leading-relaxed">
+              Garant de l’expertise technique et géologique des projets miniers,
+              il assure l’évaluation et le suivi opérationnel.
+            </p>
+          </div>
+
+          <div class="p-6 text-center relative z-10 bg-white dark:bg-[#1a2e21]">
+            <p class="font-bold text-lg text-slate-900 dark:text-white">
+              Directeur Technique
+            </p>
+            <p class="text-primary font-medium text-sm">
+              Études & Contrôle
+            </p>
           </div>
         </div>
 
-        <div class="group bg-white dark:bg-[#1a2e21] rounded-2xl shadow-lg border border-primary/10 overflow-hidden hover:shadow-2xl transition-all">
-          <img class="h-56 w-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Flag_of_the_Republic_of_the_Congo.svg/langfr-250px-Flag_of_the_Republic_of_the_Congo.svg.png" alt="Conseiller Juridique"/>
-          <div class="p-6 text-center">
-            <p class="font-bold text-lg text-slate-900 dark:text-white"></p>
-            <p class="text-primary font-medium text-sm">Conseiller Juridique</p>
+        <!-- CONSEILLER JURIDIQUE -->
+        <div class="group relative bg-white dark:bg-[#1a2e21] rounded-2xl shadow-lg border border-primary/10 overflow-hidden hover:shadow-2xl transition-all">
+          <img
+            class="h-56 w-full object-cover group-hover:scale-105 transition-transform duration-500"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Flag_of_the_Republic_of_the_Congo.svg/langfr-250px-Flag_of_the_Republic_of_the_Congo.svg.png"
+            alt="Conseiller Juridique"
+          />
+
+          <div class="absolute inset-0 bg-[#0e1b12]/80 text-white flex items-center justify-center text-center px-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <p class="text-sm leading-relaxed">
+              Assure la conformité juridique des actes du ministère et
+              accompagne les réformes du cadre légal minier.
+            </p>
+          </div>
+
+          <div class="p-6 text-center relative z-10 bg-white dark:bg-[#1a2e21]">
+            <p class="font-bold text-lg text-slate-900 dark:text-white">
+              Conseiller Juridique
+            </p>
+            <p class="text-primary font-medium text-sm">
+              Affaires légales
+            </p>
           </div>
         </div>
 
-        <!-- Ajoute d'autres membres ici si nécessaire -->
       </div>
 
-      <!-- BOUTON VOIR TOUS -->
-      <div class="flex justify-center mt-12">
-        <a href="bureau.html" class="bg-primary text-white font-bold px-10 py-4 rounded-xl shadow-lg hover:bg-primary/90 transition-all flex items-center gap-3">
+      <!-- BOUTON -->
+      <div class="flex justify-center mt-16">
+        <a href="bureau.html"
+           class="bg-primary text-white font-bold px-10 py-4 rounded-xl shadow-lg hover:bg-primary/90 transition-all flex items-center gap-3">
           Voir tous les membres du bureau
-          <span class="material-icons"></span>
+          <span class="material-symbols-outlined">arrow_forward</span>
         </a>
       </div>
-    </div>
 
+    </div>
   </div>
 </section>
-<!-- Statistics Section -->
-<section class="py-16 bg-primary text-white">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-<div class="space-y-2">
-<p class="text-4xl lg:text-5xl font-extrabold">240+</p>
-<p class="text-primary-foreground opacity-90 font-medium">Titres Miniers Valides</p>
-</div>
-<div class="space-y-2">
-<p class="text-4xl lg:text-5xl font-extrabold">12</p>
-<p class="text-primary-foreground opacity-90 font-medium">Projets Stratégiques</p>
-</div>
-<div class="space-y-2">
-<p class="text-4xl lg:text-5xl font-extrabold">15%</p>
-<p class="text-primary-foreground opacity-90 font-medium">Part du PIB (Objectif)</p>
-</div>
-<div class="space-y-2">
-<p class="text-4xl lg:text-5xl font-extrabold">100%</p>
-<p class="text-primary-foreground opacity-90 font-medium">Transparence ITIE</p>
-</div>
-</div>
-</div>
-</section>
+
 <!-- Resources Map Section -->
 <section class="py-24 bg-white dark:bg-background-dark">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -329,7 +394,8 @@
 <div class="flex flex-col gap-6">
 <div class="flex items-center gap-3 text-primary">
 <span class="material-symbols-outlined">diamond</span>
-<h3 class="font-bold uppercase tracking-widest">Mines &amp; Géologie</h3>
+<h3 class="font-bold uppercase tracking-widest">Ministère des Industries Minières
+&amp; de la Géologie</h3>
 </div>
 <p class="text-gray-500 dark:text-gray-400 leading-relaxed">
                         Portail officiel du Ministère des Industries Minières de la République du Congo. Une plateforme dédiée à la transparence, au développement et à l'excellence opérationnelle.
@@ -372,7 +438,7 @@
 </div>
 <div class="max-w-[1200px] mx-auto px-6 md:px-10 mt-12 pt-8 border-t border-gray-100 dark:border-[#2a3f31] flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] text-gray-400 uppercase tracking-widest font-bold">
 <div class="flex flex-col md:flex-row items-center gap-6">
-<p>© 2024 République du Congo - Tous droits réservés</p>
+<p>© 2026 République du Congo - Tous droits réservés</p>
 <div class="flex gap-6">
 <a class="hover:text-primary" href="#">Mentions Légales</a>
 <a class="hover:text-primary" href="#">Politique de Confidentialité</a>
@@ -403,6 +469,25 @@
     mobileMenu.classList.add("hidden");
     mobileMenu.classList.remove("flex");
   });
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+  const closeMobileMenu = document.getElementById("closeMobileMenu");
+
+  if(mobileMenuBtn && mobileMenu && closeMobileMenu){
+    mobileMenuBtn.onclick = () => {
+      mobileMenu.classList.remove("hidden");
+      mobileMenu.classList.add("flex");
+    };
+    closeMobileMenu.onclick = () => {
+      mobileMenu.classList.add("hidden");
+      mobileMenu.classList.remove("flex");
+    };
+  }
+});
 </script>
 
 </body></html>

@@ -56,9 +56,10 @@
         class="h-14 md:h-16 object-contain"
       />
       <div class="leading-tight">
-        <h2 class="text-sm md:text-lg font-bold uppercase tracking-wide">
-          Industries Minières
-        </h2>
+      <h2 class="text-sm md:text-lg font-bold uppercase tracking-wide">
+  Ministère des Industries Minières <br class="hidden md:block"/> et de la Géologie
+</h2>
+
         <span class="text-[10px] uppercase tracking-widest text-gray-500 dark:text-gray-400">
           République du Congo
         </span>
@@ -87,6 +88,32 @@
 
   </div>
 </header>
+
+
+<!-- MENU MOBILE -->
+<div id="mobileMenu"
+     class="fixed inset-0 bg-white dark:bg-[#0e1b12] z-50 hidden lg:hidden flex-col">
+
+  <!-- Header menu mobile -->
+  <div class="flex items-center justify-between px-6 py-4 border-b border-gray-200 dark:border-[#2a3f31]">
+    <h3 class="font-bold uppercase tracking-wide text-primary">
+      Menu
+    </h3>
+    <button id="closeMobileMenu" class="text-primary">
+      <span class="material-symbols-outlined text-3xl">close</span>
+    </button>
+  </div>
+
+  <!-- Liens -->
+  <nav class="flex flex-col px-6 py-8 gap-6 text-lg font-semibold">
+    <a href="code.html" class="hover:text-primary">Accueil</a>
+    <a href="ministere.html" class="hover:text-primary">Le Ministre</a>
+    <a href="mission.html" class="hover:text-primary">Missions</a>
+    <a href="actualite.html" class="hover:text-primary">Actualités</a>
+    <a class="hover:text-primary transition-colors" href="reglement.html">Réglementations</a>
+    <a href="contacts.html" class="hover:text-primary">Contacts</a>
+  </nav>
+  </div> <!-- FIN #mobileMenu -->
 <main class="flex-1 max-w-[1200px] mx-auto w-full px-6 md:px-10 py-8">
 <nav class="flex flex-wrap gap-2 py-4 mb-6 text-sm">
 <a class="text-primary font-medium hover:underline" href="#">Accueil</a>
